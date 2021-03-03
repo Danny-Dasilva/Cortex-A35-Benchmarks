@@ -1,0 +1,1782 @@
+Architecture:        aarch64
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+Vendor ID:           ARM
+Model:               1
+Model name:          Cortex-A35
+Stepping:            r0p1
+CPU max MHz:         1300.0000
+CPU min MHz:         598.0000
+BogoMIPS:            26.00
+Flags:               fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+================================================================================
+/home/mendel/sd_card/i-benchmarks/word2vec/bin
+perf stat -o ../data/word2vec_perf_output_1614765593363779956.txt --per-core -a taskset -c 0-3 ./word2vec -train ../data/text8_1.7mb -output ../data/text8-vector.bin -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 4 -binary 1 -iter 15
+Starting training using file ../data/text8_1.7mb
+100K200KVocab size: 5847
+Words in train file: 252418
+Alpha: 0.050000  Progress: 0.28%  Words/thread/sec: 3.51k  Alpha: 0.049862  Progress: 0.58%  Words/thread/sec: 5.85k  Alpha: 0.049711  Progress: 0.88%  Words/thread/sec: 8.95k  Alpha: 0.049558  Progress: 1.19%  Words/thread/sec: 11.95k  Alpha: 0.049407  Progress: 1.45%  Words/thread/sec: 8.13k  Alpha: 0.049275  Progress: 1.72%  Words/thread/sec: 8.71k  Alpha: 0.049140  Progress: 1.98%  Words/thread/sec: 9.99k  Alpha: 0.049008  Progress: 2.30%  Words/thread/sec: 10.57k  Alpha: 0.048852  Progress: 2.56%  Words/thread/sec: 8.66k  Alpha: 0.048718  Progress: 2.89%  Words/thread/sec: 9.70k  Alpha: 0.048557  Progress: 3.16%  Words/thread/sec: 10.61k  Alpha: 0.048421  Progress: 3.43%  Words/thread/sec: 10.87k  Alpha: 0.048284  Progress: 3.70%  Words/thread/sec: 9.35k  Alpha: 0.048148  Progress: 4.02%  Words/thread/sec: 9.71k  Alpha: 0.047988  Progress: 4.29%  Words/thread/sec: 10.33k  Alpha: 0.047855  Progress: 4.60%  Words/thread/sec: 11.01k  Alpha: 0.047701  Progress: 4.90%  Words/thread/sec: 9.52k  Alpha: 0.047548  Progress: 5.17%  Words/thread/sec: 10.03k  Alpha: 0.047413  Progress: 5.49%  Words/thread/sec: 10.29k  Alpha: 0.047256  Progress: 5.81%  Words/thread/sec: 10.88k  Alpha: 0.047096  Progress: 6.99%  Words/thread/sec: 10.11k  Alpha: 0.046504  Progress: 7.29%  Words/thread/sec: 10.23k  Alpha: 0.046353  Progress: 7.60%  Words/thread/sec: 10.66k  Alpha: 0.046199  Progress: 7.90%  Words/thread/sec: 11.04k  Alpha: 0.046049  Progress: 8.17%  Words/thread/sec: 10.35k  Alpha: 0.045915  Progress: 8.44%  Words/thread/sec: 10.41k  Alpha: 0.045782  Progress: 8.70%  Words/thread/sec: 10.68k  Alpha: 0.045649  Progress: 9.02%  Words/thread/sec: 10.85k  Alpha: 0.045492  Progress: 9.28%  Words/thread/sec: 10.44k  Alpha: 0.045359  Progress: 9.55%  Words/thread/sec: 10.50k  Alpha: 0.045226  Progress: 9.82%  Words/thread/sec: 10.75k  Alpha: 0.045089  Progress: 10.09%  Words/thread/sec: 10.85k  Alpha: 0.044953  Progress: 10.37%  Words/thread/sec: 10.50k  Alpha: 0.044816  Progress: 10.69%  Words/thread/sec: 10.40k  Alpha: 0.044656  Progress: 10.95%  Words/thread/sec: 10.64k  Alpha: 0.044523  Progress: 11.27%  Words/thread/sec: 10.91k  Alpha: 0.044367  Progress: 11.57%  Words/thread/sec: 10.46k  Alpha: 0.044213  Progress: 11.85%  Words/thread/sec: 10.46k  Alpha: 0.044076  Progress: 12.16%  Words/thread/sec: 10.61k  Alpha: 0.043918  Progress: 12.48%  Words/thread/sec: 10.87k  Alpha: 0.043759  Progress: 13.71%  Words/thread/sec: 10.51k  Alpha: 0.043143  Progress: 14.02%  Words/thread/sec: 10.58k  Alpha: 0.042992  Progress: 14.33%  Words/thread/sec: 10.80k  Alpha: 0.042837  Progress: 14.63%  Words/thread/sec: 11.00k  Alpha: 0.042686  Progress: 14.90%  Words/thread/sec: 10.61k  Alpha: 0.042552  Progress: 15.16%  Words/thread/sec: 10.65k  Alpha: 0.042419  Progress: 15.43%  Words/thread/sec: 10.79k  Alpha: 0.042286  Progress: 15.74%  Words/thread/sec: 10.89k  Alpha: 0.042130  Progress: 16.01%  Words/thread/sec: 10.65k  Alpha: 0.041996  Progress: 16.27%  Words/thread/sec: 10.69k  Alpha: 0.041863  Progress: 16.55%  Words/thread/sec: 10.82k  Alpha: 0.041726  Progress: 16.82%  Words/thread/sec: 10.89k  Alpha: 0.041589  Progress: 17.10%  Words/thread/sec: 10.68k  Alpha: 0.041451  Progress: 17.42%  Words/thread/sec: 10.62k  Alpha: 0.041290  Progress: 17.69%  Words/thread/sec: 10.76k  Alpha: 0.041156  Progress: 18.00%  Words/thread/sec: 10.92k  Alpha: 0.041001  Progress: 18.31%  Words/thread/sec: 10.65k  Alpha: 0.040846  Progress: 18.57%  Words/thread/sec: 10.66k  Alpha: 0.040713  Progress: 18.84%  Words/thread/sec: 10.78k  Alpha: 0.040579  Progress: 19.16%  Words/thread/sec: 10.89k  Alpha: 0.040422  Progress: 20.44%  Words/thread/sec: 10.67k  Alpha: 0.039780  Progress: 20.74%  Words/thread/sec: 10.70k  Alpha: 0.039631  Progress: 21.05%  Words/thread/sec: 10.85k  Alpha: 0.039476  Progress: 21.35%  Words/thread/sec: 10.98k  Alpha: 0.039325  Progress: 21.62%  Words/thread/sec: 10.73k  Alpha: 0.039191  Progress: 21.89%  Words/thread/sec: 10.72k  Alpha: 0.039056  Progress: 22.20%  Words/thread/sec: 10.79k  Alpha: 0.038898  Progress: 22.51%  Words/thread/sec: 10.93k  Alpha: 0.038743  Progress: 22.83%  Words/thread/sec: 10.71k  Alpha: 0.038583  Progress: 23.11%  Words/thread/sec: 10.79k  Alpha: 0.038446  Progress: 23.37%  Words/thread/sec: 10.83k  Alpha: 0.038446  Progress: 23.65%  Words/thread/sec: 10.96k  Alpha: 0.038177  Progress: 23.92%  Words/thread/sec: 10.72k  Alpha: 0.038041  Progress: 24.19%  Words/thread/sec: 10.72k  Alpha: 0.037907  Progress: 24.46%  Words/thread/sec: 10.84k  Alpha: 0.037770  Progress: 24.77%  Words/thread/sec: 10.96k  Alpha: 0.037613  Progress: 25.08%  Words/thread/sec: 10.67k  Alpha: 0.037459  Progress: 25.35%  Words/thread/sec: 10.75k  Alpha: 0.037324  Progress: 25.67%  Words/thread/sec: 10.81k  Alpha: 0.037167  Progress: 25.98%  Words/thread/sec: 10.94k  Alpha: 0.037008  Progress: 27.17%  Words/thread/sec: 10.75k  Alpha: 0.036413  Progress: 27.47%  Words/thread/sec: 10.75k  Alpha: 0.036413  Progress: 27.77%  Words/thread/sec: 10.87k  Alpha: 0.036113  Progress: 28.08%  Words/thread/sec: 10.99k  Alpha: 0.035958  Progress: 28.35%  Words/thread/sec: 10.79k  Alpha: 0.035825  Progress: 28.62%  Words/thread/sec: 10.78k  Alpha: 0.035691  Progress: 28.89%  Words/thread/sec: 10.88k  Alpha: 0.035556  Progress: 29.20%  Words/thread/sec: 10.92k  Alpha: 0.035401  Progress: 29.46%  Words/thread/sec: 10.81k  Alpha: 0.035269  Progress: 29.73%  Words/thread/sec: 10.80k  Alpha: 0.035136  Progress: 30.00%  Words/thread/sec: 10.90k  Alpha: 0.034998  Progress: 30.27%  Words/thread/sec: 10.92k  Alpha: 0.034864  Progress: 30.55%  Words/thread/sec: 10.82k  Alpha: 0.034725  Progress: 30.87%  Words/thread/sec: 10.75k  Alpha: 0.034565  Progress: 31.13%  Words/thread/sec: 10.84k  Alpha: 0.034433  Progress: 31.44%  Words/thread/sec: 10.95k  Alpha: 0.034278  Progress: 31.75%  Words/thread/sec: 10.79k  Alpha: 0.034123  Progress: 32.03%  Words/thread/sec: 10.78k  Alpha: 0.033987  Progress: 32.34%  Words/thread/sec: 10.82k  Alpha: 0.033830  Progress: 32.66%  Words/thread/sec: 10.92k  Alpha: 0.033672  Progress: 33.89%  Words/thread/sec: 10.79k  Alpha: 0.033054  Progress: 34.20%  Words/thread/sec: 10.80k  Alpha: 0.032900  Progress: 34.50%  Words/thread/sec: 10.89k  Alpha: 0.032900  Progress: 34.81%  Words/thread/sec: 10.99k  Alpha: 0.032597  Progress: 35.07%  Words/thread/sec: 10.83k  Alpha: 0.032463  Progress: 35.34%  Words/thread/sec: 10.82k  Alpha: 0.032463  Progress: 35.61%  Words/thread/sec: 10.90k  Alpha: 0.032195  Progress: 35.92%  Words/thread/sec: 10.93k  Alpha: 0.032040  Progress: 36.19%  Words/thread/sec: 10.84k  Alpha: 0.031907  Progress: 36.46%  Words/thread/sec: 10.83k  Alpha: 0.031771  Progress: 36.72%  Words/thread/sec: 10.91k  Alpha: 0.031638  Progress: 37.00%  Words/thread/sec: 10.93k  Alpha: 0.031502  Progress: 37.27%  Words/thread/sec: 10.85k  Alpha: 0.031363  Progress: 37.54%  Words/thread/sec: 10.84k  Alpha: 0.031231  Progress: 37.85%  Words/thread/sec: 10.87k  Alpha: 0.031074  Progress: 38.12%  Words/thread/sec: 10.94k  Alpha: 0.030941  Progress: 38.43%  Words/thread/sec: 10.81k  Alpha: 0.030786  Progress: 38.69%  Words/thread/sec: 10.86k  Alpha: 0.030653  Progress: 38.96%  Words/thread/sec: 10.88k  Alpha: 0.030518  Progress: 39.23%  Words/thread/sec: 10.95k  Alpha: 0.030386  Progress: 39.50%  Words/thread/sec: 10.79k  Alpha: 0.030249  Progress: 40.62%  Words/thread/sec: 10.82k  Alpha: 0.029688  Progress: 40.93%  Words/thread/sec: 10.83k  Alpha: 0.029537  Progress: 41.23%  Words/thread/sec: 10.90k  Alpha: 0.029386  Progress: 41.54%  Words/thread/sec: 10.99k  Alpha: 0.029232  Progress: 41.81%  Words/thread/sec: 10.85k  Alpha: 0.029097  Progress: 42.07%  Words/thread/sec: 10.85k  Alpha: 0.028964  Progress: 42.34%  Words/thread/sec: 10.91k  Alpha: 0.028830  Progress: 42.65%  Words/thread/sec: 10.94k  Alpha: 0.028675  Progress: 42.92%  Words/thread/sec: 10.86k  Alpha: 0.028542  Progress: 43.19%  Words/thread/sec: 10.86k  Alpha: 0.028404  Progress: 43.46%  Words/thread/sec: 10.92k  Alpha: 0.028272  Progress: 43.73%  Words/thread/sec: 10.94k  Alpha: 0.028137  Progress: 44.00%  Words/thread/sec: 10.86k  Alpha: 0.027998  Progress: 44.31%  Words/thread/sec: 10.82k  Alpha: 0.027843  Progress: 44.64%  Words/thread/sec: 10.90k  Alpha: 0.027681  Progress: 44.91%  Words/thread/sec: 10.96k  Alpha: 0.027547  Progress: 45.21%  Words/thread/sec: 10.84k  Alpha: 0.027393  Progress: 45.48%  Words/thread/sec: 10.84k  Alpha: 0.027258  Progress: 45.80%  Words/thread/sec: 10.86k  Alpha: 0.027100  Progress: 46.11%  Words/thread/sec: 10.94k  Alpha: 0.026943  Progress: 47.34%  Words/thread/sec: 10.84k  Alpha: 0.026330  Progress: 47.64%  Words/thread/sec: 10.84k  Alpha: 0.026180  Progress: 47.94%  Words/thread/sec: 10.91k  Alpha: 0.026029  Progress: 48.25%  Words/thread/sec: 10.98k  Alpha: 0.025874  Progress: 48.52%  Words/thread/sec: 10.86k  Alpha: 0.025739  Progress: 48.79%  Words/thread/sec: 10.86k  Alpha: 0.025606  Progress: 49.05%  Words/thread/sec: 10.92k  Alpha: 0.025473  Progress: 49.37%  Words/thread/sec: 10.94k  Alpha: 0.025317  Progress: 49.63%  Words/thread/sec: 10.87k  Alpha: 0.025184  Progress: 49.90%  Words/thread/sec: 10.87k  Alpha: 0.025049  Progress: 50.17%  Words/thread/sec: 10.92k  Alpha: 0.024915  Progress: 50.44%  Words/thread/sec: 10.93k  Alpha: 0.024779  Progress: 50.72%  Words/thread/sec: 10.87k  Alpha: 0.024641  Progress: 50.98%  Words/thread/sec: 10.87k  Alpha: 0.024508  Progress: 51.29%  Words/thread/sec: 10.89k  Alpha: 0.024354  Progress: 51.56%  Words/thread/sec: 10.94k  Alpha: 0.024221  Progress: 51.87%  Words/thread/sec: 10.84k  Alpha: 0.024065  Progress: 52.14%  Words/thread/sec: 10.88k  Alpha: 0.023930  Progress: 52.41%  Words/thread/sec: 10.90k  Alpha: 0.023796  Progress: 52.73%  Words/thread/sec: 10.91k  Alpha: 0.023637  Progress: 53.00%  Words/thread/sec: 10.84k  Alpha: 0.023502  Progress: 54.06%  Words/thread/sec: 10.85k  Alpha: 0.022971  Progress: 54.36%  Words/thread/sec: 10.86k  Alpha: 0.022819  Progress: 54.66%  Words/thread/sec: 10.92k  Alpha: 0.022669  Progress: 54.97%  Words/thread/sec: 10.98k  Alpha: 0.022516  Progress: 55.23%  Words/thread/sec: 10.88k  Alpha: 0.022383  Progress: 55.50%  Words/thread/sec: 10.87k  Alpha: 0.022250  Progress: 55.76%  Words/thread/sec: 10.92k  Alpha: 0.022118  Progress: 56.08%  Words/thread/sec: 10.94k  Alpha: 0.021961  Progress: 56.40%  Words/thread/sec: 10.85k  Alpha: 0.021802  Progress: 56.66%  Words/thread/sec: 10.89k  Alpha: 0.021668  Progress: 56.94%  Words/thread/sec: 10.94k  Alpha: 0.021531  Progress: 57.21%  Words/thread/sec: 10.95k  Alpha: 0.021397  Progress: 57.48%  Words/thread/sec: 10.85k  Alpha: 0.021262  Progress: 57.80%  Words/thread/sec: 10.86k  Alpha: 0.021101  Progress: 58.11%  Words/thread/sec: 10.91k  Alpha: 0.020945  Progress: 58.38%  Words/thread/sec: 10.96k  Alpha: 0.020812  Progress: 58.68%  Words/thread/sec: 10.83k  Alpha: 0.020659  Progress: 58.95%  Words/thread/sec: 10.87k  Alpha: 0.020524  Progress: 59.27%  Words/thread/sec: 10.89k  Alpha: 0.020367  Progress: 59.58%  Words/thread/sec: 10.94k  Alpha: 0.020210  Progress: 60.77%  Words/thread/sec: 10.86k  Alpha: 0.019614  Progress: 61.08%  Words/thread/sec: 10.87k  Alpha: 0.019462  Progress: 61.38%  Words/thread/sec: 10.92k  Alpha: 0.019312  Progress: 61.68%  Words/thread/sec: 10.97k  Alpha: 0.019158  Progress: 61.95%  Words/thread/sec: 10.88k  Alpha: 0.019024  Progress: 62.22%  Words/thread/sec: 10.88k  Alpha: 0.018891  Progress: 62.49%  Words/thread/sec: 10.93k  Alpha: 0.018757  Progress: 62.80%  Words/thread/sec: 10.94k  Alpha: 0.018602  Progress: 63.12%  Words/thread/sec: 10.86k  Alpha: 0.018441  Progress: 63.38%  Words/thread/sec: 10.90k  Alpha: 0.018308  Progress: 63.66%  Words/thread/sec: 10.94k  Alpha: 0.018171  Progress: 63.93%  Words/thread/sec: 10.95k  Alpha: 0.018036  Progress: 64.20%  Words/thread/sec: 10.86k  Alpha: 0.017900  Progress: 64.52%  Words/thread/sec: 10.87k  Alpha: 0.017740  Progress: 64.83%  Words/thread/sec: 10.92k  Alpha: 0.017585  Progress: 65.10%  Words/thread/sec: 10.96k  Alpha: 0.017451  Progress: 65.40%  Words/thread/sec: 10.84k  Alpha: 0.017298  Progress: 65.67%  Words/thread/sec: 10.88k  Alpha: 0.017164  Progress: 65.94%  Words/thread/sec: 10.92k  Alpha: 0.017032  Progress: 66.25%  Words/thread/sec: 10.95k  Alpha: 0.016874  Progress: 67.49%  Words/thread/sec: 10.87k  Alpha: 0.016253  Progress: 67.79%  Words/thread/sec: 10.89k  Alpha: 0.016103  Progress: 68.10%  Words/thread/sec: 10.92k  Alpha: 0.015952  Progress: 68.40%  Words/thread/sec: 10.97k  Alpha: 0.015798  Progress: 68.67%  Words/thread/sec: 10.89k  Alpha: 0.015663  Progress: 68.94%  Words/thread/sec: 10.90k  Alpha: 0.015530  Progress: 69.21%  Words/thread/sec: 10.93k  Alpha: 0.015396  Progress: 69.52%  Words/thread/sec: 10.93k  Alpha: 0.015241  Progress: 69.78%  Words/thread/sec: 10.86k  Alpha: 0.015108  Progress: 70.11%  Words/thread/sec: 10.91k  Alpha: 0.014946  Progress: 70.38%  Words/thread/sec: 10.94k  Alpha: 0.014809  Progress: 70.65%  Words/thread/sec: 10.94k  Alpha: 0.014674  Progress: 70.92%  Words/thread/sec: 10.87k  Alpha: 0.014674  Progress: 71.19%  Words/thread/sec: 10.91k  Alpha: 0.014405  Progress: 71.50%  Words/thread/sec: 10.91k  Alpha: 0.014251  Progress: 71.76%  Words/thread/sec: 10.95k  Alpha: 0.014118  Progress: 72.03%  Words/thread/sec: 10.87k  Alpha: 0.013985  Progress: 72.34%  Words/thread/sec: 10.89k  Alpha: 0.013832  Progress: 72.61%  Words/thread/sec: 10.92k  Alpha: 0.013696  Progress: 72.92%  Words/thread/sec: 10.93k  Alpha: 0.013538  Progress: 73.19%  Words/thread/sec: 10.89k  Alpha: 0.013403  Progress: 74.21%  Words/thread/sec: 10.88k  Alpha: 0.012895  Progress: 74.51%  Words/thread/sec: 10.89k  Alpha: 0.012744  Progress: 74.81%  Words/thread/sec: 10.92k  Alpha: 0.012594  Progress: 75.12%  Words/thread/sec: 10.96k  Alpha: 0.012441  Progress: 75.39%  Words/thread/sec: 10.90k  Alpha: 0.012305  Progress: 75.66%  Words/thread/sec: 10.90k  Alpha: 0.012171  Progress: 75.92%  Words/thread/sec: 10.93k  Alpha: 0.012038  Progress: 76.23%  Words/thread/sec: 10.93k  Alpha: 0.011884  Progress: 76.50%  Words/thread/sec: 10.90k  Alpha: 0.011751  Progress: 76.76%  Words/thread/sec: 10.90k  Alpha: 0.011618  Progress: 77.04%  Words/thread/sec: 10.93k  Alpha: 0.011480  Progress: 77.31%  Words/thread/sec: 10.94k  Alpha: 0.011344  Progress: 77.59%  Words/thread/sec: 10.91k  Alpha: 0.011204  Progress: 77.86%  Words/thread/sec: 10.91k  Alpha: 0.011071  Progress: 78.17%  Words/thread/sec: 10.91k  Alpha: 0.010916  Progress: 78.44%  Words/thread/sec: 10.94k  Alpha: 0.010782  Progress: 78.75%  Words/thread/sec: 10.89k  Alpha: 0.010625  Progress: 79.02%  Words/thread/sec: 10.92k  Alpha: 0.010492  Progress: 79.29%  Words/thread/sec: 10.91k  Alpha: 0.010357  Progress: 79.60%  Words/thread/sec: 10.92k  Alpha: 0.010200  Progress: 80.12%  Words/thread/sec: 10.92k  Alpha: 0.009940  Progress: 80.93%  Words/thread/sec: 10.92k  Alpha: 0.009535  Progress: 81.23%  Words/thread/sec: 10.90k  Alpha: 0.009385  Progress: 81.53%  Words/thread/sec: 10.92k  Alpha: 0.009235  Progress: 81.84%  Words/thread/sec: 10.96k  Alpha: 0.009082  Progress: 82.10%  Words/thread/sec: 10.93k  Alpha: 0.008948  Progress: 82.37%  Words/thread/sec: 10.90k  Alpha: 0.008813  Progress: 82.64%  Words/thread/sec: 10.93k  Alpha: 0.008680  Progress: 82.95%  Words/thread/sec: 10.93k  Alpha: 0.008526  Progress: 83.22%  Words/thread/sec: 10.93k  Alpha: 0.008391  Progress: 83.48%  Words/thread/sec: 10.91k  Alpha: 0.008258  Progress: 83.76%  Words/thread/sec: 10.93k  Alpha: 0.008122  Progress: 84.03%  Words/thread/sec: 10.93k  Alpha: 0.007985  Progress: 84.31%  Words/thread/sec: 10.93k  Alpha: 0.007847  Progress: 84.63%  Words/thread/sec: 10.89k  Alpha: 0.007686  Progress: 84.94%  Words/thread/sec: 10.91k  Alpha: 0.007529  Progress: 85.21%  Words/thread/sec: 10.95k  Alpha: 0.007396  Progress: 85.52%  Words/thread/sec: 10.92k  Alpha: 0.007240  Progress: 85.79%  Words/thread/sec: 10.89k  Alpha: 0.007105  Progress: 86.10%  Words/thread/sec: 10.91k  Alpha: 0.006948  Progress: 86.42%  Words/thread/sec: 10.94k  Alpha: 0.006789  Progress: 87.65%  Words/thread/sec: 10.92k  Alpha: 0.006176  Progress: 87.95%  Words/thread/sec: 10.90k  Alpha: 0.006024  Progress: 88.26%  Words/thread/sec: 10.92k  Alpha: 0.005872  Progress: 88.57%  Words/thread/sec: 10.96k  Alpha: 0.005717  Progress: 88.83%  Words/thread/sec: 10.93k  Alpha: 0.005584  Progress: 89.10%  Words/thread/sec: 10.91k  Alpha: 0.005451  Progress: 89.36%  Words/thread/sec: 10.93k  Alpha: 0.005318  Progress: 89.68%  Words/thread/sec: 10.94k  Alpha: 0.005162  Progress: 89.94%  Words/thread/sec: 10.94k  Alpha: 0.005029  Progress: 90.21%  Words/thread/sec: 10.91k  Alpha: 0.004895  Progress: 90.48%  Words/thread/sec: 10.93k  Alpha: 0.004758  Progress: 90.76%  Words/thread/sec: 10.94k  Alpha: 0.004622  Progress: 91.03%  Words/thread/sec: 10.94k  Alpha: 0.004484  Progress: 91.30%  Words/thread/sec: 10.92k  Alpha: 0.004352  Progress: 91.61%  Words/thread/sec: 10.91k  Alpha: 0.004196  Progress: 91.87%  Words/thread/sec: 10.94k  Alpha: 0.004063  Progress: 92.18%  Words/thread/sec: 10.92k  Alpha: 0.003908  Progress: 92.45%  Words/thread/sec: 10.93k  Alpha: 0.003776  Progress: 92.72%  Words/thread/sec: 10.91k  Alpha: 0.003640  Progress: 93.04%  Words/thread/sec: 10.92k  Alpha: 0.003481  Progress: 93.57%  Words/thread/sec: 10.93k  Alpha: 0.003215  Progress: 94.38%  Words/thread/sec: 10.93k  Alpha: 0.002812  Progress: 94.68%  Words/thread/sec: 10.91k  Alpha: 0.002660  Progress: 94.98%  Words/thread/sec: 10.92k  Alpha: 0.002510  Progress: 95.29%  Words/thread/sec: 10.96k  Alpha: 0.002355  Progress: 95.56%  Words/thread/sec: 10.94k  Alpha: 0.002220  Progress: 95.83%  Words/thread/sec: 10.92k  Alpha: 0.002087  Progress: 96.09%  Words/thread/sec: 10.93k  Alpha: 0.001953  Progress: 96.41%  Words/thread/sec: 10.94k  Alpha: 0.001797  Progress: 96.72%  Words/thread/sec: 10.92k  Alpha: 0.001638  Progress: 96.99%  Words/thread/sec: 10.93k  Alpha: 0.001505  Progress: 97.27%  Words/thread/sec: 10.94k  Alpha: 0.001367  Progress: 97.54%  Words/thread/sec: 10.94k  Alpha: 0.001231  Progress: 97.81%  Words/thread/sec: 10.93k  Alpha: 0.001095  Progress: 98.13%  Words/thread/sec: 10.91k  Alpha: 0.000934  Progress: 98.44%  Words/thread/sec: 10.92k  Alpha: 0.000779  Progress: 98.71%  Words/thread/sec: 10.95k  Alpha: 0.000646  Progress: 99.02%  Words/thread/sec: 10.91k  Alpha: 0.000492  Progress: 99.29%  Words/thread/sec: 10.90k  Alpha: 0.000357  Progress: 99.60%  Words/thread/sec: 10.93k  Alpha: 0.000200  Progress: 99.92%  Words/thread/sec: 10.94k  # started on Wed Mar  3 09:59:53 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          91,033.02 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              9,331      context-switches          #    0.103 K/sec                  
+S0-C0           1                256      cpu-migrations            #    0.003 K/sec                  
+S0-C0           1                 10      page-faults               #    0.000 K/sec                  
+S0-C0           1      1,938,715,237      cycles                    #    0.021 GHz                    
+S0-C0           1      2,087,511,058      instructions              #    1.08  insn per cycle         
+S0-C0           1      4,146,870,361      branches                  #   45.553 M/sec                  
+S0-C0           1         62,300,268      branch-misses             #    1.50% of all branches        
+S0-C1           1          91,033.02 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,430      context-switches          #    0.049 K/sec                  
+S0-C1           1                255      cpu-migrations            #    0.003 K/sec                  
+S0-C1           1                 12      page-faults               #    0.000 K/sec                  
+S0-C1           1      1,730,121,387      cycles                    #    0.019 GHz                    
+S0-C1           1      2,084,828,370      instructions              #    1.21  insn per cycle         
+S0-C1           1      4,145,413,370      branches                  #   45.537 M/sec                  
+S0-C1           1         61,352,042      branch-misses             #    1.48% of all branches        
+S0-C2           1          91,033.02 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1             11,691      context-switches          #    0.128 K/sec                  
+S0-C2           1                234      cpu-migrations            #    0.003 K/sec                  
+S0-C2           1                  8      page-faults               #    0.000 K/sec                  
+S0-C2           1      1,956,601,250      cycles                    #    0.021 GHz                    
+S0-C2           1      2,098,584,751      instructions              #    1.07  insn per cycle         
+S0-C2           1      4,147,821,388      branches                  #   45.564 M/sec                  
+S0-C2           1         62,224,441      branch-misses             #    1.50% of all branches        
+S0-C3           1          91,033.02 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,363      context-switches          #    0.048 K/sec                  
+S0-C3           1                243      cpu-migrations            #    0.003 K/sec                  
+S0-C3           1            130,143      page-faults               #    0.001 M/sec                  
+S0-C3           1      1,882,920,841      cycles                    #    0.021 GHz                    
+S0-C3           1      4,011,201,374      instructions              #    2.13  insn per cycle         
+S0-C3           1      4,267,385,929      branches                  #   46.877 M/sec                  
+S0-C3           1         66,532,401      branch-misses             #    1.56% of all branches        
+
+      91.033826859 seconds time elapsed
+
+perf stat -o ../data/word2vec_perf_output_no_branch_1614765593368128058.txt --per-core -a taskset -c 0-3 ./word2vec_no-guess-branch-probability -train ../data/text8_3.3mb -output ../data/text8-vector.bin -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 4 -binary 1 -iter 15
+Starting training using file ../data/text8_3.3mb
+100K200K300K400K500KVocab size: 9546
+Words in train file: 524166
+Alpha: 0.050000  Progress: 0.15%  Words/thread/sec: 6.35k  Alpha: 0.049927  Progress: 0.28%  Words/thread/sec: 12.30k  Alpha: 0.049858  Progress: 0.42%  Words/thread/sec: 18.21k  Alpha: 0.049789  Progress: 0.56%  Words/thread/sec: 24.21k  Alpha: 0.049719  Progress: 0.71%  Words/thread/sec: 14.14k  Alpha: 0.049643  Progress: 0.86%  Words/thread/sec: 16.88k  Alpha: 0.049572  Progress: 1.00%  Words/thread/sec: 19.71k  Alpha: 0.049499  Progress: 1.15%  Words/thread/sec: 22.63k  Alpha: 0.049424  Progress: 1.28%  Words/thread/sec: 17.33k  Alpha: 0.049361  Progress: 1.42%  Words/thread/sec: 18.19k  Alpha: 0.049290  Progress: 1.57%  Words/thread/sec: 20.06k  Alpha: 0.049215  Progress: 1.72%  Words/thread/sec: 21.90k  Alpha: 0.049142  Progress: 1.87%  Words/thread/sec: 18.37k  Alpha: 0.049067  Progress: 2.02%  Words/thread/sec: 19.05k  Alpha: 0.048992  Progress: 2.16%  Words/thread/sec: 20.44k  Alpha: 0.048918  Progress: 2.31%  Words/thread/sec: 21.78k  Alpha: 0.048847  Progress: 2.45%  Words/thread/sec: 18.95k  Alpha: 0.048777  Progress: 2.59%  Words/thread/sec: 19.44k  Alpha: 0.048705  Progress: 2.73%  Words/thread/sec: 20.49k  Alpha: 0.048634  Progress: 2.88%  Words/thread/sec: 21.59k  Alpha: 0.048560  Progress: 3.03%  Words/thread/sec: 19.30k  Alpha: 0.048486  Progress: 3.17%  Words/thread/sec: 19.70k  Alpha: 0.048416  Progress: 3.31%  Words/thread/sec: 20.59k  Alpha: 0.048345  Progress: 3.46%  Words/thread/sec: 21.51k  Alpha: 0.048269  Progress: 3.60%  Words/thread/sec: 19.54k  Alpha: 0.048199  Progress: 3.75%  Words/thread/sec: 19.89k  Alpha: 0.048127  Progress: 3.89%  Words/thread/sec: 20.63k  Alpha: 0.048057  Progress: 4.03%  Words/thread/sec: 21.40k  Alpha: 0.047983  Progress: 4.19%  Words/thread/sec: 19.74k  Alpha: 0.047907  Progress: 4.33%  Words/thread/sec: 20.06k  Alpha: 0.047835  Progress: 4.48%  Words/thread/sec: 20.74k  Alpha: 0.047760  Progress: 4.63%  Words/thread/sec: 21.40k  Alpha: 0.047687  Progress: 4.77%  Words/thread/sec: 19.92k  Alpha: 0.047615  Progress: 4.92%  Words/thread/sec: 20.20k  Alpha: 0.047542  Progress: 5.06%  Words/thread/sec: 20.78k  Alpha: 0.047470  Progress: 5.21%  Words/thread/sec: 21.35k  Alpha: 0.047394  Progress: 5.36%  Words/thread/sec: 20.41k  Alpha: 0.047321  Progress: 5.51%  Words/thread/sec: 20.32k  Alpha: 0.047321  Progress: 5.65%  Words/thread/sec: 20.87k  Alpha: 0.047173  Progress: 5.80%  Words/thread/sec: 21.34k  Alpha: 0.047101  Progress: 5.94%  Words/thread/sec: 20.78k  Alpha: 0.047032  Progress: 6.08%  Words/thread/sec: 20.39k  Alpha: 0.046960  Progress: 6.23%  Words/thread/sec: 20.86k  Alpha: 0.046887  Progress: 6.37%  Words/thread/sec: 21.28k  Alpha: 0.046816  Progress: 6.84%  Words/thread/sec: 20.92k  Alpha: 0.046578  Progress: 6.99%  Words/thread/sec: 20.85k  Alpha: 0.046504  Progress: 7.13%  Words/thread/sec: 21.22k  Alpha: 0.046434  Progress: 7.27%  Words/thread/sec: 21.41k  Alpha: 0.046365  Progress: 7.42%  Words/thread/sec: 20.91k  Alpha: 0.046290  Progress: 7.57%  Words/thread/sec: 20.86k  Alpha: 0.046215  Progress: 7.71%  Words/thread/sec: 21.21k  Alpha: 0.046145  Progress: 7.86%  Words/thread/sec: 21.40k  Alpha: 0.046072  Progress: 8.01%  Words/thread/sec: 20.94k  Alpha: 0.045997  Progress: 8.15%  Words/thread/sec: 20.87k  Alpha: 0.045927  Progress: 8.29%  Words/thread/sec: 21.20k  Alpha: 0.045854  Progress: 8.44%  Words/thread/sec: 21.39k  Alpha: 0.045780  Progress: 8.59%  Words/thread/sec: 20.94k  Alpha: 0.045706  Progress: 8.74%  Words/thread/sec: 20.90k  Alpha: 0.045631  Progress: 8.89%  Words/thread/sec: 21.22k  Alpha: 0.045557  Progress: 9.03%  Words/thread/sec: 21.40k  Alpha: 0.045486  Progress: 9.17%  Words/thread/sec: 20.94k  Alpha: 0.045414  Progress: 9.31%  Words/thread/sec: 20.91k  Alpha: 0.045343  Progress: 9.46%  Words/thread/sec: 21.18k  Alpha: 0.045271  Progress: 9.60%  Words/thread/sec: 21.36k  Alpha: 0.045198  Progress: 9.75%  Words/thread/sec: 20.93k  Alpha: 0.045126  Progress: 9.89%  Words/thread/sec: 20.91k  Alpha: 0.045055  Progress: 10.04%  Words/thread/sec: 21.19k  Alpha: 0.044979  Progress: 10.18%  Words/thread/sec: 21.34k  Alpha: 0.044909  Progress: 10.33%  Words/thread/sec: 20.92k  Alpha: 0.044837  Progress: 10.47%  Words/thread/sec: 20.91k  Alpha: 0.044764  Progress: 10.62%  Words/thread/sec: 21.17k  Alpha: 0.044690  Progress: 10.76%  Words/thread/sec: 21.32k  Alpha: 0.044621  Progress: 10.89%  Words/thread/sec: 21.08k  Alpha: 0.044557  Progress: 11.03%  Words/thread/sec: 20.89k  Alpha: 0.044483  Progress: 11.18%  Words/thread/sec: 21.12k  Alpha: 0.044410  Progress: 11.33%  Words/thread/sec: 21.28k  Alpha: 0.044337  Progress: 11.47%  Words/thread/sec: 21.07k  Alpha: 0.044265  Progress: 11.62%  Words/thread/sec: 20.90k  Alpha: 0.044192  Progress: 11.77%  Words/thread/sec: 21.12k  Alpha: 0.044116  Progress: 11.91%  Words/thread/sec: 21.28k  Alpha: 0.044044  Progress: 12.06%  Words/thread/sec: 21.25k  Alpha: 0.043971  Progress: 12.20%  Words/thread/sec: 20.92k  Alpha: 0.043898  Progress: 12.35%  Words/thread/sec: 21.12k  Alpha: 0.043826  Progress: 12.50%  Words/thread/sec: 21.29k  Alpha: 0.043752  Progress: 12.64%  Words/thread/sec: 21.39k  Alpha: 0.043682  Progress: 12.88%  Words/thread/sec: 21.08k  Alpha: 0.043561  Progress: 13.02%  Words/thread/sec: 21.26k  Alpha: 0.043491  Progress: 13.16%  Words/thread/sec: 21.42k  Alpha: 0.043419  Progress: 13.44%  Words/thread/sec: 21.26k  Alpha: 0.043278  Progress: 13.69%  Words/thread/sec: 21.13k  Alpha: 0.043154  Progress: 13.83%  Words/thread/sec: 21.30k  Alpha: 0.043084  Progress: 13.97%  Words/thread/sec: 21.30k  Alpha: 0.043016  Progress: 14.12%  Words/thread/sec: 21.39k  Alpha: 0.042942  Progress: 14.27%  Words/thread/sec: 21.12k  Alpha: 0.042866  Progress: 14.41%  Words/thread/sec: 21.28k  Alpha: 0.042796  Progress: 14.55%  Words/thread/sec: 21.30k  Alpha: 0.042723  Progress: 14.70%  Words/thread/sec: 21.39k  Alpha: 0.042648  Progress: 14.85%  Words/thread/sec: 21.13k  Alpha: 0.042577  Progress: 14.99%  Words/thread/sec: 21.27k  Alpha: 0.042504  Progress: 15.14%  Words/thread/sec: 21.30k  Alpha: 0.042429  Progress: 15.29%  Words/thread/sec: 21.38k  Alpha: 0.042355  Progress: 15.44%  Words/thread/sec: 21.14k  Alpha: 0.042280  Progress: 15.59%  Words/thread/sec: 21.29k  Alpha: 0.042206  Progress: 15.73%  Words/thread/sec: 21.30k  Alpha: 0.042135  Progress: 15.87%  Words/thread/sec: 21.37k  Alpha: 0.042064  Progress: 16.01%  Words/thread/sec: 21.13k  Alpha: 0.041993  Progress: 16.16%  Words/thread/sec: 21.26k  Alpha: 0.041921  Progress: 16.31%  Words/thread/sec: 21.29k  Alpha: 0.041847  Progress: 16.45%  Words/thread/sec: 21.35k  Alpha: 0.041775  Progress: 16.59%  Words/thread/sec: 21.12k  Alpha: 0.041704  Progress: 16.74%  Words/thread/sec: 21.26k  Alpha: 0.041629  Progress: 16.89%  Words/thread/sec: 21.28k  Alpha: 0.041557  Progress: 17.03%  Words/thread/sec: 21.35k  Alpha: 0.041486  Progress: 17.17%  Words/thread/sec: 21.13k  Alpha: 0.041413  Progress: 17.32%  Words/thread/sec: 21.24k  Alpha: 0.041339  Progress: 17.45%  Words/thread/sec: 21.26k  Alpha: 0.041275  Progress: 17.59%  Words/thread/sec: 21.42k  Alpha: 0.041206  Progress: 17.74%  Words/thread/sec: 21.10k  Alpha: 0.041131  Progress: 17.88%  Words/thread/sec: 21.21k  Alpha: 0.041059  Progress: 18.03%  Words/thread/sec: 21.25k  Alpha: 0.041059  Progress: 18.17%  Words/thread/sec: 21.42k  Alpha: 0.040913  Progress: 18.32%  Words/thread/sec: 21.10k  Alpha: 0.040841  Progress: 18.47%  Words/thread/sec: 21.21k  Alpha: 0.040766  Progress: 18.62%  Words/thread/sec: 21.36k  Alpha: 0.040692  Progress: 18.76%  Words/thread/sec: 21.41k  Alpha: 0.040620  Progress: 18.90%  Words/thread/sec: 21.13k  Alpha: 0.040551  Progress: 19.04%  Words/thread/sec: 21.26k  Alpha: 0.040478  Progress: 19.19%  Words/thread/sec: 21.36k  Alpha: 0.040405  Progress: 19.34%  Words/thread/sec: 21.39k  Alpha: 0.040331  Progress: 19.58%  Words/thread/sec: 21.21k  Alpha: 0.040211  Progress: 19.72%  Words/thread/sec: 21.30k  Alpha: 0.040141  Progress: 19.86%  Words/thread/sec: 21.32k  Alpha: 0.040069  Progress: 20.00%  Words/thread/sec: 21.37k  Alpha: 0.040000  Progress: 20.39%  Words/thread/sec: 21.24k  Alpha: 0.039804  Progress: 20.53%  Words/thread/sec: 21.32k  Alpha: 0.039734  Progress: 20.68%  Words/thread/sec: 21.47k  Alpha: 0.039659  Progress: 20.82%  Words/thread/sec: 21.39k  Alpha: 0.039591  Progress: 20.97%  Words/thread/sec: 21.23k  Alpha: 0.039515  Progress: 21.11%  Words/thread/sec: 21.31k  Alpha: 0.039445  Progress: 21.26%  Words/thread/sec: 21.46k  Alpha: 0.039369  Progress: 21.41%  Words/thread/sec: 21.40k  Alpha: 0.039297  Progress: 21.55%  Words/thread/sec: 21.23k  Alpha: 0.039227  Progress: 21.69%  Words/thread/sec: 21.30k  Alpha: 0.039154  Progress: 21.84%  Words/thread/sec: 21.44k  Alpha: 0.039080  Progress: 21.99%  Words/thread/sec: 21.39k  Alpha: 0.039005  Progress: 22.14%  Words/thread/sec: 21.24k  Alpha: 0.038931  Progress: 22.29%  Words/thread/sec: 21.31k  Alpha: 0.038857  Progress: 22.43%  Words/thread/sec: 21.44k  Alpha: 0.038785  Progress: 22.57%  Words/thread/sec: 21.38k  Alpha: 0.038715  Progress: 22.71%  Words/thread/sec: 21.23k  Alpha: 0.038643  Progress: 22.86%  Words/thread/sec: 21.30k  Alpha: 0.038571  Progress: 23.00%  Words/thread/sec: 21.42k  Alpha: 0.038499  Progress: 23.15%  Words/thread/sec: 21.36k  Alpha: 0.038426  Progress: 23.29%  Words/thread/sec: 21.21k  Alpha: 0.038355  Progress: 23.44%  Words/thread/sec: 21.30k  Alpha: 0.038279  Progress: 23.58%  Words/thread/sec: 21.41k  Alpha: 0.038208  Progress: 23.73%  Words/thread/sec: 21.36k  Alpha: 0.038137  Progress: 23.85%  Words/thread/sec: 21.21k  Alpha: 0.038073  Progress: 24.00%  Words/thread/sec: 21.32k  Alpha: 0.038001  Progress: 24.15%  Words/thread/sec: 21.40k  Alpha: 0.037926  Progress: 24.29%  Words/thread/sec: 21.33k  Alpha: 0.037857  Progress: 24.43%  Words/thread/sec: 21.19k  Alpha: 0.037785  Progress: 24.58%  Words/thread/sec: 21.32k  Alpha: 0.037711  Progress: 24.72%  Words/thread/sec: 21.38k  Alpha: 0.037638  Progress: 24.87%  Words/thread/sec: 21.32k  Alpha: 0.037565  Progress: 25.02%  Words/thread/sec: 21.28k  Alpha: 0.037492  Progress: 25.16%  Words/thread/sec: 21.32k  Alpha: 0.037420  Progress: 25.31%  Words/thread/sec: 21.38k  Alpha: 0.037344  Progress: 25.46%  Words/thread/sec: 21.32k  Alpha: 0.037272  Progress: 25.59%  Words/thread/sec: 21.35k  Alpha: 0.037203  Progress: 25.74%  Words/thread/sec: 21.31k  Alpha: 0.037130  Progress: 25.89%  Words/thread/sec: 21.37k  Alpha: 0.037057  Progress: 26.13%  Words/thread/sec: 21.39k  Alpha: 0.036936  Progress: 26.27%  Words/thread/sec: 21.27k  Alpha: 0.036863  Progress: 26.41%  Words/thread/sec: 21.32k  Alpha: 0.036793  Progress: 26.55%  Words/thread/sec: 21.41k  Alpha: 0.036725  Progress: 26.76%  Words/thread/sec: 21.42k  Alpha: 0.036618  Progress: 27.09%  Words/thread/sec: 21.36k  Alpha: 0.036457  Progress: 27.23%  Words/thread/sec: 21.41k  Alpha: 0.036383  Progress: 27.38%  Words/thread/sec: 21.46k  Alpha: 0.036312  Progress: 27.51%  Words/thread/sec: 21.32k  Alpha: 0.036244  Progress: 27.66%  Words/thread/sec: 21.35k  Alpha: 0.036169  Progress: 27.81%  Words/thread/sec: 21.40k  Alpha: 0.036093  Progress: 27.96%  Words/thread/sec: 21.45k  Alpha: 0.036022  Progress: 28.10%  Words/thread/sec: 21.32k  Alpha: 0.035949  Progress: 28.25%  Words/thread/sec: 21.35k  Alpha: 0.035875  Progress: 28.39%  Words/thread/sec: 21.39k  Alpha: 0.035804  Progress: 28.54%  Words/thread/sec: 21.44k  Alpha: 0.035731  Progress: 28.69%  Words/thread/sec: 21.32k  Alpha: 0.035655  Progress: 28.83%  Words/thread/sec: 21.35k  Alpha: 0.035583  Progress: 28.98%  Words/thread/sec: 21.40k  Alpha: 0.035509  Progress: 29.13%  Words/thread/sec: 21.44k  Alpha: 0.035434  Progress: 29.27%  Words/thread/sec: 21.31k  Alpha: 0.035363  Progress: 29.42%  Words/thread/sec: 21.34k  Alpha: 0.035291  Progress: 29.56%  Words/thread/sec: 21.39k  Alpha: 0.035220  Progress: 29.70%  Words/thread/sec: 21.42k  Alpha: 0.035148  Progress: 29.85%  Words/thread/sec: 21.30k  Alpha: 0.035074  Progress: 29.99%  Words/thread/sec: 21.33k  Alpha: 0.035003  Progress: 30.14%  Words/thread/sec: 21.38k  Alpha: 0.034932  Progress: 30.29%  Words/thread/sec: 21.42k  Alpha: 0.034857  Progress: 30.43%  Words/thread/sec: 21.30k  Alpha: 0.034786  Progress: 30.56%  Words/thread/sec: 21.38k  Alpha: 0.034722  Progress: 30.70%  Words/thread/sec: 21.36k  Alpha: 0.034650  Progress: 30.85%  Words/thread/sec: 21.40k  Alpha: 0.034576  Progress: 30.99%  Words/thread/sec: 21.28k  Alpha: 0.034504  Progress: 31.13%  Words/thread/sec: 21.37k  Alpha: 0.034434  Progress: 31.28%  Words/thread/sec: 21.36k  Alpha: 0.034359  Progress: 31.43%  Words/thread/sec: 21.39k  Alpha: 0.034287  Progress: 31.57%  Words/thread/sec: 21.34k  Alpha: 0.034214  Progress: 31.72%  Words/thread/sec: 21.37k  Alpha: 0.034141  Progress: 31.86%  Words/thread/sec: 21.35k  Alpha: 0.034068  Progress: 32.01%  Words/thread/sec: 21.39k  Alpha: 0.033993  Progress: 32.15%  Words/thread/sec: 21.40k  Alpha: 0.033924  Progress: 32.30%  Words/thread/sec: 21.36k  Alpha: 0.033852  Progress: 32.44%  Words/thread/sec: 21.34k  Alpha: 0.033780  Progress: 32.68%  Words/thread/sec: 21.44k  Alpha: 0.033660  Progress: 32.81%  Words/thread/sec: 21.38k  Alpha: 0.033596  Progress: 32.95%  Words/thread/sec: 21.34k  Alpha: 0.033527  Progress: 33.09%  Words/thread/sec: 21.38k  Alpha: 0.033454  Progress: 33.23%  Words/thread/sec: 21.41k  Alpha: 0.033383  Progress: 33.45%  Words/thread/sec: 21.41k  Alpha: 0.033277  Progress: 33.67%  Words/thread/sec: 21.42k  Alpha: 0.033166  Progress: 33.81%  Words/thread/sec: 21.35k  Alpha: 0.033093  Progress: 34.08%  Words/thread/sec: 21.44k  Alpha: 0.032960  Progress: 34.23%  Words/thread/sec: 21.40k  Alpha: 0.032884  Progress: 34.37%  Words/thread/sec: 21.37k  Alpha: 0.032816  Progress: 34.52%  Words/thread/sec: 21.42k  Alpha: 0.032741  Progress: 34.66%  Words/thread/sec: 21.43k  Alpha: 0.032671  Progress: 34.81%  Words/thread/sec: 21.39k  Alpha: 0.032597  Progress: 34.95%  Words/thread/sec: 21.37k  Alpha: 0.032524  Progress: 35.09%  Words/thread/sec: 21.41k  Alpha: 0.032454  Progress: 35.24%  Words/thread/sec: 21.43k  Alpha: 0.032380  Progress: 35.38%  Words/thread/sec: 21.39k  Alpha: 0.032309  Progress: 35.53%  Words/thread/sec: 21.36k  Alpha: 0.032234  Progress: 35.68%  Words/thread/sec: 21.41k  Alpha: 0.032159  Progress: 35.83%  Words/thread/sec: 21.42k  Alpha: 0.032085  Progress: 35.97%  Words/thread/sec: 21.39k  Alpha: 0.032013  Progress: 36.12%  Words/thread/sec: 21.35k  Alpha: 0.031942  Progress: 36.26%  Words/thread/sec: 21.40k  Alpha: 0.031871  Progress: 36.40%  Words/thread/sec: 21.41k  Alpha: 0.031799  Progress: 36.54%  Words/thread/sec: 21.38k  Alpha: 0.031728  Progress: 36.69%  Words/thread/sec: 21.34k  Alpha: 0.031654  Progress: 36.83%  Words/thread/sec: 21.39k  Alpha: 0.031583  Progress: 36.98%  Words/thread/sec: 21.41k  Alpha: 0.031508  Progress: 37.11%  Words/thread/sec: 21.42k  Alpha: 0.031444  Progress: 37.25%  Words/thread/sec: 21.33k  Alpha: 0.031373  Progress: 37.40%  Words/thread/sec: 21.38k  Alpha: 0.031301  Progress: 37.55%  Words/thread/sec: 21.39k  Alpha: 0.031227  Progress: 37.69%  Words/thread/sec: 21.42k  Alpha: 0.031154  Progress: 37.83%  Words/thread/sec: 21.32k  Alpha: 0.031085  Progress: 37.98%  Words/thread/sec: 21.38k  Alpha: 0.031011  Progress: 38.12%  Words/thread/sec: 21.39k  Alpha: 0.030938  Progress: 38.27%  Words/thread/sec: 21.46k  Alpha: 0.030866  Progress: 38.41%  Words/thread/sec: 21.32k  Alpha: 0.030793  Progress: 38.56%  Words/thread/sec: 21.37k  Alpha: 0.030721  Progress: 38.70%  Words/thread/sec: 21.43k  Alpha: 0.030651  Progress: 38.85%  Words/thread/sec: 21.45k  Alpha: 0.030575  Progress: 39.09%  Words/thread/sec: 21.37k  Alpha: 0.030456  Progress: 39.23%  Words/thread/sec: 21.42k  Alpha: 0.030383  Progress: 39.38%  Words/thread/sec: 21.42k  Alpha: 0.030311  Progress: 39.52%  Words/thread/sec: 21.39k  Alpha: 0.030242  Progress: 39.66%  Words/thread/sec: 21.36k  Alpha: 0.030168  Progress: 39.81%  Words/thread/sec: 21.41k  Alpha: 0.030094  Progress: 39.95%  Words/thread/sec: 21.41k  Alpha: 0.030024  Progress: 40.17%  Words/thread/sec: 21.43k  Alpha: 0.029914  Progress: 40.39%  Words/thread/sec: 21.43k  Alpha: 0.029807  Progress: 40.53%  Words/thread/sec: 21.37k  Alpha: 0.029733  Progress: 40.66%  Words/thread/sec: 21.43k  Alpha: 0.029669  Progress: 40.80%  Words/thread/sec: 21.45k  Alpha: 0.029599  Progress: 41.05%  Words/thread/sec: 21.34k  Alpha: 0.029473  Progress: 41.20%  Words/thread/sec: 21.40k  Alpha: 0.029399  Progress: 41.34%  Words/thread/sec: 21.46k  Alpha: 0.029330  Progress: 41.48%  Words/thread/sec: 21.49k  Alpha: 0.029260  Progress: 41.62%  Words/thread/sec: 21.33k  Alpha: 0.029189  Progress: 41.76%  Words/thread/sec: 21.39k  Alpha: 0.029118  Progress: 41.91%  Words/thread/sec: 21.45k  Alpha: 0.029045  Progress: 42.06%  Words/thread/sec: 21.48k  Alpha: 0.028972  Progress: 42.20%  Words/thread/sec: 21.33k  Alpha: 0.028898  Progress: 42.35%  Words/thread/sec: 21.39k  Alpha: 0.028824  Progress: 42.50%  Words/thread/sec: 21.45k  Alpha: 0.028750  Progress: 42.65%  Words/thread/sec: 21.48k  Alpha: 0.028676  Progress: 42.79%  Words/thread/sec: 21.33k  Alpha: 0.028605  Progress: 42.93%  Words/thread/sec: 21.38k  Alpha: 0.028533  Progress: 43.08%  Words/thread/sec: 21.44k  Alpha: 0.028462  Progress: 43.22%  Words/thread/sec: 21.47k  Alpha: 0.028391  Progress: 43.36%  Words/thread/sec: 21.32k  Alpha: 0.028320  Progress: 43.51%  Words/thread/sec: 21.37k  Alpha: 0.028244  Progress: 43.66%  Words/thread/sec: 21.44k  Alpha: 0.028171  Progress: 43.81%  Words/thread/sec: 21.47k  Alpha: 0.028096  Progress: 43.95%  Words/thread/sec: 21.32k  Alpha: 0.028023  Progress: 44.10%  Words/thread/sec: 21.38k  Alpha: 0.027951  Progress: 44.24%  Words/thread/sec: 21.44k  Alpha: 0.027880  Progress: 44.39%  Words/thread/sec: 21.46k  Alpha: 0.027805  Progress: 44.54%  Words/thread/sec: 21.35k  Alpha: 0.027732  Progress: 44.68%  Words/thread/sec: 21.39k  Alpha: 0.027658  Progress: 44.82%  Words/thread/sec: 21.43k  Alpha: 0.027589  Progress: 44.97%  Words/thread/sec: 21.45k  Alpha: 0.027516  Progress: 45.11%  Words/thread/sec: 21.39k  Alpha: 0.027447  Progress: 45.25%  Words/thread/sec: 21.38k  Alpha: 0.027375  Progress: 45.40%  Words/thread/sec: 21.42k  Alpha: 0.027301  Progress: 45.55%  Words/thread/sec: 21.45k  Alpha: 0.027225  Progress: 45.79%  Words/thread/sec: 21.36k  Alpha: 0.027106  Progress: 45.93%  Words/thread/sec: 21.40k  Alpha: 0.027034  Progress: 46.07%  Words/thread/sec: 21.42k  Alpha: 0.026965  Progress: 46.21%  Words/thread/sec: 21.48k  Alpha: 0.026893  Progress: 46.36%  Words/thread/sec: 21.35k  Alpha: 0.026819  Progress: 46.51%  Words/thread/sec: 21.39k  Alpha: 0.026744  Progress: 46.66%  Words/thread/sec: 21.42k  Alpha: 0.026670  Progress: 46.80%  Words/thread/sec: 21.48k  Alpha: 0.026600  Progress: 47.09%  Words/thread/sec: 21.38k  Alpha: 0.026457  Progress: 47.24%  Words/thread/sec: 21.42k  Alpha: 0.026381  Progress: 47.39%  Words/thread/sec: 21.46k  Alpha: 0.026307  Progress: 47.53%  Words/thread/sec: 21.45k  Alpha: 0.026237  Progress: 47.78%  Words/thread/sec: 21.40k  Alpha: 0.026112  Progress: 47.93%  Words/thread/sec: 21.44k  Alpha: 0.026037  Progress: 48.06%  Words/thread/sec: 21.43k  Alpha: 0.025968  Progress: 48.21%  Words/thread/sec: 21.49k  Alpha: 0.025897  Progress: 48.35%  Words/thread/sec: 21.39k  Alpha: 0.025826  Progress: 48.49%  Words/thread/sec: 21.43k  Alpha: 0.025755  Progress: 48.63%  Words/thread/sec: 21.42k  Alpha: 0.025683  Progress: 48.78%  Words/thread/sec: 21.48k  Alpha: 0.025611  Progress: 48.92%  Words/thread/sec: 21.38k  Alpha: 0.025538  Progress: 49.07%  Words/thread/sec: 21.43k  Alpha: 0.025463  Progress: 49.22%  Words/thread/sec: 21.42k  Alpha: 0.025389  Progress: 49.37%  Words/thread/sec: 21.48k  Alpha: 0.025315  Progress: 49.51%  Words/thread/sec: 21.38k  Alpha: 0.025244  Progress: 49.66%  Words/thread/sec: 21.43k  Alpha: 0.025172  Progress: 49.80%  Words/thread/sec: 21.41k  Alpha: 0.025101  Progress: 49.94%  Words/thread/sec: 21.47k  Alpha: 0.025028  Progress: 50.10%  Words/thread/sec: 21.38k  Alpha: 0.024952  Progress: 50.24%  Words/thread/sec: 21.42k  Alpha: 0.024881  Progress: 50.38%  Words/thread/sec: 21.41k  Alpha: 0.024808  Progress: 50.53%  Words/thread/sec: 21.47k  Alpha: 0.024733  Progress: 50.68%  Words/thread/sec: 21.38k  Alpha: 0.024660  Progress: 50.83%  Words/thread/sec: 21.42k  Alpha: 0.024587  Progress: 50.97%  Words/thread/sec: 21.41k  Alpha: 0.024516  Progress: 51.12%  Words/thread/sec: 21.46k  Alpha: 0.024441  Progress: 51.27%  Words/thread/sec: 21.42k  Alpha: 0.024366  Progress: 51.42%  Words/thread/sec: 21.42k  Alpha: 0.024291  Progress: 51.56%  Words/thread/sec: 21.41k  Alpha: 0.024222  Progress: 51.70%  Words/thread/sec: 21.46k  Alpha: 0.024150  Progress: 51.83%  Words/thread/sec: 21.45k  Alpha: 0.024084  Progress: 51.98%  Words/thread/sec: 21.41k  Alpha: 0.024012  Progress: 52.19%  Words/thread/sec: 21.42k  Alpha: 0.023903  Progress: 52.35%  Words/thread/sec: 21.48k  Alpha: 0.023827  Progress: 52.49%  Words/thread/sec: 21.38k  Alpha: 0.023754  Progress: 52.63%  Words/thread/sec: 21.41k  Alpha: 0.023685  Progress: 52.78%  Words/thread/sec: 21.42k  Alpha: 0.023612  Progress: 52.92%  Words/thread/sec: 21.47k  Alpha: 0.023540  Progress: 53.07%  Words/thread/sec: 21.37k  Alpha: 0.023467  Progress: 53.22%  Words/thread/sec: 21.40k  Alpha: 0.023392  Progress: 53.36%  Words/thread/sec: 21.42k  Alpha: 0.023318  Progress: 53.50%  Words/thread/sec: 21.47k  Alpha: 0.023249  Progress: 53.80%  Words/thread/sec: 21.40k  Alpha: 0.023101  Progress: 53.94%  Words/thread/sec: 21.41k  Alpha: 0.023030  Progress: 54.09%  Words/thread/sec: 21.46k  Alpha: 0.022956  Progress: 54.23%  Words/thread/sec: 21.44k  Alpha: 0.022886  Progress: 54.48%  Words/thread/sec: 21.44k  Alpha: 0.022762  Progress: 54.63%  Words/thread/sec: 21.44k  Alpha: 0.022686  Progress: 54.77%  Words/thread/sec: 21.42k  Alpha: 0.022615  Progress: 54.91%  Words/thread/sec: 21.44k  Alpha: 0.022547  Progress: 55.05%  Words/thread/sec: 21.43k  Alpha: 0.022475  Progress: 55.19%  Words/thread/sec: 21.43k  Alpha: 0.022405  Progress: 55.34%  Words/thread/sec: 21.41k  Alpha: 0.022332  Progress: 55.48%  Words/thread/sec: 21.43k  Alpha: 0.022260  Progress: 55.62%  Words/thread/sec: 21.42k  Alpha: 0.022188  Progress: 55.77%  Words/thread/sec: 21.43k  Alpha: 0.022113  Progress: 55.92%  Words/thread/sec: 21.41k  Alpha: 0.022038  Progress: 56.07%  Words/thread/sec: 21.43k  Alpha: 0.021963  Progress: 56.22%  Words/thread/sec: 21.42k  Alpha: 0.021892  Progress: 56.36%  Words/thread/sec: 21.43k  Alpha: 0.021820  Progress: 56.50%  Words/thread/sec: 21.41k  Alpha: 0.021748  Progress: 56.65%  Words/thread/sec: 21.43k  Alpha: 0.021677  Progress: 56.77%  Words/thread/sec: 21.45k  Alpha: 0.021613  Progress: 56.92%  Words/thread/sec: 21.41k  Alpha: 0.021542  Progress: 57.07%  Words/thread/sec: 21.40k  Alpha: 0.021467  Progress: 57.21%  Words/thread/sec: 21.42k  Alpha: 0.021393  Progress: 57.36%  Words/thread/sec: 21.44k  Alpha: 0.021322  Progress: 57.50%  Words/thread/sec: 21.41k  Alpha: 0.021250  Progress: 57.65%  Words/thread/sec: 21.40k  Alpha: 0.021175  Progress: 57.80%  Words/thread/sec: 21.43k  Alpha: 0.021102  Progress: 57.94%  Words/thread/sec: 21.47k  Alpha: 0.021031  Progress: 58.09%  Words/thread/sec: 21.41k  Alpha: 0.020957  Progress: 58.23%  Words/thread/sec: 21.40k  Alpha: 0.020887  Progress: 58.37%  Words/thread/sec: 21.44k  Alpha: 0.020815  Progress: 58.51%  Words/thread/sec: 21.46k  Alpha: 0.020746  Progress: 58.75%  Words/thread/sec: 21.44k  Alpha: 0.020627  Progress: 58.90%  Words/thread/sec: 21.42k  Alpha: 0.020551  Progress: 59.04%  Words/thread/sec: 21.44k  Alpha: 0.020478  Progress: 59.18%  Words/thread/sec: 21.43k  Alpha: 0.020410  Progress: 59.33%  Words/thread/sec: 21.43k  Alpha: 0.020336  Progress: 59.47%  Words/thread/sec: 21.41k  Alpha: 0.020263  Progress: 59.62%  Words/thread/sec: 21.43k  Alpha: 0.020192  Progress: 59.77%  Words/thread/sec: 21.43k  Alpha: 0.020117  Progress: 59.91%  Words/thread/sec: 21.43k  Alpha: 0.020044  Progress: 60.05%  Words/thread/sec: 21.41k  Alpha: 0.019975  Progress: 60.20%  Words/thread/sec: 21.43k  Alpha: 0.019900  Progress: 60.42%  Words/thread/sec: 21.45k  Alpha: 0.019789  Progress: 60.64%  Words/thread/sec: 21.40k  Alpha: 0.019679  Progress: 60.78%  Words/thread/sec: 21.43k  Alpha: 0.019608  Progress: 60.93%  Words/thread/sec: 21.44k  Alpha: 0.019537  Progress: 61.07%  Words/thread/sec: 21.47k  Alpha: 0.019464  Progress: 61.32%  Words/thread/sec: 21.44k  Alpha: 0.019338  Progress: 61.47%  Words/thread/sec: 21.42k  Alpha: 0.019267  Progress: 61.61%  Words/thread/sec: 21.45k  Alpha: 0.019196  Progress: 61.74%  Words/thread/sec: 21.45k  Alpha: 0.019128  Progress: 61.89%  Words/thread/sec: 21.43k  Alpha: 0.019057  Progress: 62.03%  Words/thread/sec: 21.41k  Alpha: 0.018985  Progress: 62.17%  Words/thread/sec: 21.44k  Alpha: 0.018913  Progress: 62.32%  Words/thread/sec: 21.45k  Alpha: 0.018839  Progress: 62.47%  Words/thread/sec: 21.42k  Alpha: 0.018764  Progress: 62.62%  Words/thread/sec: 21.41k  Alpha: 0.018690  Progress: 62.76%  Words/thread/sec: 21.44k  Alpha: 0.018619  Progress: 62.91%  Words/thread/sec: 21.45k  Alpha: 0.018544  Progress: 63.06%  Words/thread/sec: 21.42k  Alpha: 0.018472  Progress: 63.20%  Words/thread/sec: 21.41k  Alpha: 0.018400  Progress: 63.35%  Words/thread/sec: 21.44k  Alpha: 0.018324  Progress: 63.49%  Words/thread/sec: 21.44k  Alpha: 0.018253  Progress: 63.64%  Words/thread/sec: 21.42k  Alpha: 0.018182  Progress: 63.79%  Words/thread/sec: 21.40k  Alpha: 0.018107  Progress: 63.93%  Words/thread/sec: 21.44k  Alpha: 0.018034  Progress: 64.08%  Words/thread/sec: 21.44k  Alpha: 0.017960  Progress: 64.22%  Words/thread/sec: 21.42k  Alpha: 0.017888  Progress: 64.38%  Words/thread/sec: 21.42k  Alpha: 0.017812  Progress: 64.52%  Words/thread/sec: 21.45k  Alpha: 0.017738  Progress: 64.67%  Words/thread/sec: 21.44k  Alpha: 0.017666  Progress: 64.82%  Words/thread/sec: 21.42k  Alpha: 0.017592  Progress: 64.95%  Words/thread/sec: 21.45k  Alpha: 0.017526  Progress: 65.09%  Words/thread/sec: 21.45k  Alpha: 0.017453  Progress: 65.23%  Words/thread/sec: 21.43k  Alpha: 0.017384  Progress: 65.45%  Words/thread/sec: 21.43k  Alpha: 0.017277  Progress: 65.60%  Words/thread/sec: 21.42k  Alpha: 0.017201  Progress: 65.74%  Words/thread/sec: 21.42k  Alpha: 0.017132  Progress: 65.88%  Words/thread/sec: 21.45k  Alpha: 0.017059  Progress: 66.03%  Words/thread/sec: 21.43k  Alpha: 0.016986  Progress: 66.17%  Words/thread/sec: 21.41k  Alpha: 0.016914  Progress: 66.32%  Words/thread/sec: 21.41k  Alpha: 0.016839  Progress: 66.47%  Words/thread/sec: 21.45k  Alpha: 0.016767  Progress: 66.61%  Words/thread/sec: 21.43k  Alpha: 0.016693  Progress: 66.75%  Words/thread/sec: 21.41k  Alpha: 0.016623  Progress: 66.98%  Words/thread/sec: 21.43k  Alpha: 0.016512  Progress: 67.12%  Words/thread/sec: 21.47k  Alpha: 0.016438  Progress: 67.34%  Words/thread/sec: 21.41k  Alpha: 0.016328  Progress: 67.49%  Words/thread/sec: 21.41k  Alpha: 0.016254  Progress: 67.63%  Words/thread/sec: 21.44k  Alpha: 0.016254  Progress: 67.78%  Words/thread/sec: 21.48k  Alpha: 0.016112  Progress: 67.93%  Words/thread/sec: 21.41k  Alpha: 0.016037  Progress: 68.17%  Words/thread/sec: 21.44k  Alpha: 0.015914  Progress: 68.31%  Words/thread/sec: 21.47k  Alpha: 0.015843  Progress: 68.45%  Words/thread/sec: 21.40k  Alpha: 0.015775  Progress: 68.59%  Words/thread/sec: 21.43k  Alpha: 0.015705  Progress: 68.74%  Words/thread/sec: 21.44k  Alpha: 0.015632  Progress: 68.88%  Words/thread/sec: 21.46k  Alpha: 0.015559  Progress: 69.03%  Words/thread/sec: 21.39k  Alpha: 0.015484  Progress: 69.18%  Words/thread/sec: 21.43k  Alpha: 0.015410  Progress: 69.32%  Words/thread/sec: 21.44k  Alpha: 0.015339  Progress: 69.47%  Words/thread/sec: 21.46k  Alpha: 0.015265  Progress: 69.61%  Words/thread/sec: 21.39k  Alpha: 0.015193  Progress: 69.74%  Words/thread/sec: 21.42k  Alpha: 0.015129  Progress: 69.89%  Words/thread/sec: 21.46k  Alpha: 0.015055  Progress: 70.03%  Words/thread/sec: 21.45k  Alpha: 0.014983  Progress: 70.18%  Words/thread/sec: 21.38k  Alpha: 0.014912  Progress: 70.32%  Words/thread/sec: 21.42k  Alpha: 0.014840  Progress: 70.46%  Words/thread/sec: 21.45k  Alpha: 0.014769  Progress: 70.61%  Words/thread/sec: 21.45k  Alpha: 0.014693  Progress: 70.76%  Words/thread/sec: 21.40k  Alpha: 0.014619  Progress: 70.90%  Words/thread/sec: 21.43k  Alpha: 0.014548  Progress: 71.05%  Words/thread/sec: 21.44k  Alpha: 0.014474  Progress: 71.20%  Words/thread/sec: 21.45k  Alpha: 0.014401  Progress: 71.34%  Words/thread/sec: 21.43k  Alpha: 0.014331  Progress: 71.49%  Words/thread/sec: 21.43k  Alpha: 0.014256  Progress: 71.63%  Words/thread/sec: 21.42k  Alpha: 0.014185  Progress: 71.77%  Words/thread/sec: 21.45k  Alpha: 0.014113  Progress: 72.01%  Words/thread/sec: 21.41k  Alpha: 0.013994  Progress: 72.15%  Words/thread/sec: 21.41k  Alpha: 0.013925  Progress: 72.29%  Words/thread/sec: 21.43k  Alpha: 0.013856  Progress: 72.44%  Words/thread/sec: 21.47k  Alpha: 0.013780  Progress: 72.59%  Words/thread/sec: 21.41k  Alpha: 0.013707  Progress: 72.73%  Words/thread/sec: 21.41k  Alpha: 0.013633  Progress: 72.88%  Words/thread/sec: 21.43k  Alpha: 0.013561  Progress: 73.03%  Words/thread/sec: 21.47k  Alpha: 0.013487  Progress: 73.17%  Words/thread/sec: 21.40k  Alpha: 0.013414  Progress: 73.30%  Words/thread/sec: 21.43k  Alpha: 0.013350  Progress: 73.44%  Words/thread/sec: 21.43k  Alpha: 0.013281  Progress: 73.58%  Words/thread/sec: 21.45k  Alpha: 0.013209  Progress: 73.88%  Words/thread/sec: 21.43k  Alpha: 0.013062  Progress: 74.03%  Words/thread/sec: 21.42k  Alpha: 0.012987  Progress: 74.17%  Words/thread/sec: 21.45k  Alpha: 0.012913  Progress: 74.31%  Words/thread/sec: 21.45k  Alpha: 0.012843  Progress: 74.46%  Words/thread/sec: 21.43k  Alpha: 0.012772  Progress: 74.61%  Words/thread/sec: 21.42k  Alpha: 0.012696  Progress: 74.75%  Words/thread/sec: 21.44k  Alpha: 0.012625  Progress: 74.89%  Words/thread/sec: 21.45k  Alpha: 0.012554  Progress: 75.04%  Words/thread/sec: 21.43k  Alpha: 0.012480  Progress: 75.28%  Words/thread/sec: 21.45k  Alpha: 0.012360  Progress: 75.43%  Words/thread/sec: 21.43k  Alpha: 0.012286  Progress: 75.56%  Words/thread/sec: 21.42k  Alpha: 0.012218  Progress: 75.71%  Words/thread/sec: 21.45k  Alpha: 0.012147  Progress: 75.86%  Words/thread/sec: 21.44k  Alpha: 0.012072  Progress: 76.00%  Words/thread/sec: 21.43k  Alpha: 0.011998  Progress: 76.15%  Words/thread/sec: 21.42k  Alpha: 0.011925  Progress: 76.30%  Words/thread/sec: 21.45k  Alpha: 0.011848  Progress: 76.45%  Words/thread/sec: 21.44k  Alpha: 0.011777  Progress: 76.59%  Words/thread/sec: 21.42k  Alpha: 0.011706  Progress: 76.74%  Words/thread/sec: 21.42k  Alpha: 0.011631  Progress: 76.88%  Words/thread/sec: 21.45k  Alpha: 0.011559  Progress: 77.02%  Words/thread/sec: 21.44k  Alpha: 0.011488  Progress: 77.17%  Words/thread/sec: 21.42k  Alpha: 0.011413  Progress: 77.32%  Words/thread/sec: 21.43k  Alpha: 0.011339  Progress: 77.46%  Words/thread/sec: 21.46k  Alpha: 0.011268  Progress: 77.61%  Words/thread/sec: 21.44k  Alpha: 0.011195  Progress: 77.76%  Words/thread/sec: 21.42k  Alpha: 0.011121  Progress: 77.90%  Words/thread/sec: 21.45k  Alpha: 0.011052  Progress: 78.04%  Words/thread/sec: 21.45k  Alpha: 0.010978  Progress: 78.19%  Words/thread/sec: 21.43k  Alpha: 0.010903  Progress: 78.43%  Words/thread/sec: 21.44k  Alpha: 0.010784  Progress: 78.57%  Words/thread/sec: 21.43k  Alpha: 0.010713  Progress: 78.71%  Words/thread/sec: 21.44k  Alpha: 0.010644  Progress: 78.86%  Words/thread/sec: 21.45k  Alpha: 0.010571  Progress: 79.01%  Words/thread/sec: 21.44k  Alpha: 0.010495  Progress: 79.15%  Words/thread/sec: 21.43k  Alpha: 0.010425  Progress: 79.30%  Words/thread/sec: 21.43k  Alpha: 0.010350  Progress: 79.45%  Words/thread/sec: 21.45k  Alpha: 0.010277  Progress: 79.59%  Words/thread/sec: 21.44k  Alpha: 0.010204  Progress: 79.74%  Words/thread/sec: 21.43k  Alpha: 0.010131  Progress: 79.89%  Words/thread/sec: 21.43k  Alpha: 0.010055  Progress: 80.04%  Words/thread/sec: 21.45k  Alpha: 0.009982  Progress: 80.18%  Words/thread/sec: 21.43k  Alpha: 0.009912  Progress: 80.39%  Words/thread/sec: 21.45k  Alpha: 0.009805  Progress: 80.61%  Words/thread/sec: 21.47k  Alpha: 0.009695  Progress: 80.76%  Words/thread/sec: 21.43k  Alpha: 0.009620  Progress: 80.89%  Words/thread/sec: 21.44k  Alpha: 0.009556  Progress: 81.03%  Words/thread/sec: 21.45k  Alpha: 0.009486  Progress: 81.17%  Words/thread/sec: 21.46k  Alpha: 0.009414  Progress: 81.32%  Words/thread/sec: 21.43k  Alpha: 0.009339  Progress: 81.46%  Words/thread/sec: 21.44k  Alpha: 0.009268  Progress: 81.61%  Words/thread/sec: 21.45k  Alpha: 0.009197  Progress: 81.75%  Words/thread/sec: 21.46k  Alpha: 0.009125  Progress: 81.89%  Words/thread/sec: 21.42k  Alpha: 0.009055  Progress: 82.16%  Words/thread/sec: 21.44k  Alpha: 0.008920  Progress: 82.30%  Words/thread/sec: 21.45k  Alpha: 0.008849  Progress: 82.44%  Words/thread/sec: 21.44k  Alpha: 0.008781  Progress: 82.59%  Words/thread/sec: 21.45k  Alpha: 0.008705  Progress: 82.74%  Words/thread/sec: 21.43k  Alpha: 0.008632  Progress: 82.86%  Words/thread/sec: 21.46k  Alpha: 0.008568  Progress: 83.01%  Words/thread/sec: 21.43k  Alpha: 0.008495  Progress: 83.15%  Words/thread/sec: 21.45k  Alpha: 0.008423  Progress: 83.30%  Words/thread/sec: 21.43k  Alpha: 0.008352  Progress: 83.44%  Words/thread/sec: 21.46k  Alpha: 0.008280  Progress: 83.59%  Words/thread/sec: 21.43k  Alpha: 0.008205  Progress: 83.73%  Words/thread/sec: 21.44k  Alpha: 0.008134  Progress: 83.88%  Words/thread/sec: 21.44k  Alpha: 0.008061  Progress: 84.03%  Words/thread/sec: 21.46k  Alpha: 0.007986  Progress: 84.17%  Words/thread/sec: 21.42k  Alpha: 0.007914  Progress: 84.32%  Words/thread/sec: 21.44k  Alpha: 0.007842  Progress: 84.45%  Words/thread/sec: 21.46k  Alpha: 0.007773  Progress: 84.60%  Words/thread/sec: 21.46k  Alpha: 0.007699  Progress: 84.84%  Words/thread/sec: 21.44k  Alpha: 0.007578  Progress: 84.99%  Words/thread/sec: 21.46k  Alpha: 0.007504  Progress: 85.14%  Words/thread/sec: 21.44k  Alpha: 0.007431  Progress: 85.28%  Words/thread/sec: 21.45k  Alpha: 0.007362  Progress: 85.42%  Words/thread/sec: 21.44k  Alpha: 0.007290  Progress: 85.56%  Words/thread/sec: 21.46k  Alpha: 0.007218  Progress: 85.71%  Words/thread/sec: 21.44k  Alpha: 0.007143  Progress: 85.86%  Words/thread/sec: 21.45k  Alpha: 0.007068  Progress: 86.00%  Words/thread/sec: 21.44k  Alpha: 0.006999  Progress: 86.15%  Words/thread/sec: 21.46k  Alpha: 0.006925  Progress: 86.29%  Words/thread/sec: 21.44k  Alpha: 0.006853  Progress: 86.45%  Words/thread/sec: 21.45k  Alpha: 0.006777  Progress: 86.59%  Words/thread/sec: 21.44k  Alpha: 0.006704  Progress: 86.74%  Words/thread/sec: 21.45k  Alpha: 0.006631  Progress: 86.88%  Words/thread/sec: 21.43k  Alpha: 0.006562  Progress: 87.10%  Words/thread/sec: 21.46k  Alpha: 0.006451  Progress: 87.31%  Words/thread/sec: 21.47k  Alpha: 0.006344  Progress: 87.46%  Words/thread/sec: 21.44k  Alpha: 0.006270  Progress: 87.60%  Words/thread/sec: 21.44k  Alpha: 0.006198  Progress: 87.74%  Words/thread/sec: 21.45k  Alpha: 0.006128  Progress: 87.89%  Words/thread/sec: 21.47k  Alpha: 0.006054  Progress: 88.04%  Words/thread/sec: 21.44k  Alpha: 0.005978  Progress: 88.19%  Words/thread/sec: 21.44k  Alpha: 0.005906  Progress: 88.33%  Words/thread/sec: 21.45k  Alpha: 0.005834  Progress: 88.47%  Words/thread/sec: 21.46k  Alpha: 0.005763  Progress: 88.62%  Words/thread/sec: 21.43k  Alpha: 0.005692  Progress: 88.86%  Words/thread/sec: 21.46k  Alpha: 0.005570  Progress: 89.01%  Words/thread/sec: 21.47k  Alpha: 0.005496  Progress: 89.16%  Words/thread/sec: 21.42k  Alpha: 0.005422  Progress: 89.29%  Words/thread/sec: 21.44k  Alpha: 0.005354  Progress: 89.44%  Words/thread/sec: 21.45k  Alpha: 0.005278  Progress: 89.59%  Words/thread/sec: 21.47k  Alpha: 0.005204  Progress: 89.74%  Words/thread/sec: 21.42k  Alpha: 0.005132  Progress: 89.88%  Words/thread/sec: 21.44k  Alpha: 0.005059  Progress: 90.03%  Words/thread/sec: 21.45k  Alpha: 0.004985  Progress: 90.17%  Words/thread/sec: 21.47k  Alpha: 0.004914  Progress: 90.31%  Words/thread/sec: 21.41k  Alpha: 0.004843  Progress: 90.46%  Words/thread/sec: 21.44k  Alpha: 0.004768  Progress: 90.62%  Words/thread/sec: 21.47k  Alpha: 0.004691  Progress: 90.77%  Words/thread/sec: 21.47k  Alpha: 0.004616  Progress: 90.90%  Words/thread/sec: 21.42k  Alpha: 0.004549  Progress: 91.05%  Words/thread/sec: 21.45k  Alpha: 0.004477  Progress: 91.19%  Words/thread/sec: 21.47k  Alpha: 0.004406  Progress: 91.34%  Words/thread/sec: 21.46k  Alpha: 0.004332  Progress: 91.55%  Words/thread/sec: 21.43k  Alpha: 0.004224  Progress: 91.70%  Words/thread/sec: 21.45k  Alpha: 0.004150  Progress: 91.84%  Words/thread/sec: 21.46k  Alpha: 0.004081  Progress: 91.98%  Words/thread/sec: 21.48k  Alpha: 0.004009  Progress: 92.13%  Words/thread/sec: 21.43k  Alpha: 0.003936  Progress: 92.27%  Words/thread/sec: 21.45k  Alpha: 0.003866  Progress: 92.42%  Words/thread/sec: 21.46k  Alpha: 0.003791  Progress: 92.57%  Words/thread/sec: 21.47k  Alpha: 0.003715  Progress: 92.72%  Words/thread/sec: 21.42k  Alpha: 0.003642  Progress: 92.85%  Words/thread/sec: 21.44k  Alpha: 0.003573  Progress: 93.01%  Words/thread/sec: 21.46k  Alpha: 0.003497  Progress: 93.15%  Words/thread/sec: 21.47k  Alpha: 0.003425  Progress: 93.30%  Words/thread/sec: 21.42k  Alpha: 0.003351  Progress: 93.44%  Words/thread/sec: 21.44k  Alpha: 0.003278  Progress: 93.59%  Words/thread/sec: 21.45k  Alpha: 0.003204  Progress: 93.73%  Words/thread/sec: 21.47k  Alpha: 0.003135  Progress: 94.02%  Words/thread/sec: 21.44k  Alpha: 0.002990  Progress: 94.16%  Words/thread/sec: 21.45k  Alpha: 0.002918  Progress: 94.31%  Words/thread/sec: 21.47k  Alpha: 0.002844  Progress: 94.45%  Words/thread/sec: 21.45k  Alpha: 0.002773  Progress: 94.60%  Words/thread/sec: 21.44k  Alpha: 0.002699  Progress: 94.74%  Words/thread/sec: 21.45k  Alpha: 0.002628  Progress: 94.89%  Words/thread/sec: 21.47k  Alpha: 0.002553  Progress: 95.04%  Words/thread/sec: 21.45k  Alpha: 0.002482  Progress: 95.18%  Words/thread/sec: 21.43k  Alpha: 0.002410  Progress: 95.32%  Words/thread/sec: 21.44k  Alpha: 0.002339  Progress: 95.46%  Words/thread/sec: 21.47k  Alpha: 0.002268  Progress: 95.61%  Words/thread/sec: 21.45k  Alpha: 0.002195  Progress: 95.86%  Words/thread/sec: 21.43k  Alpha: 0.002069  Progress: 96.01%  Words/thread/sec: 21.46k  Alpha: 0.001994  Progress: 96.15%  Words/thread/sec: 21.45k  Alpha: 0.001926  Progress: 96.30%  Words/thread/sec: 21.47k  Alpha: 0.001852  Progress: 96.44%  Words/thread/sec: 21.43k  Alpha: 0.001779  Progress: 96.58%  Words/thread/sec: 21.45k  Alpha: 0.001708  Progress: 96.73%  Words/thread/sec: 21.45k  Alpha: 0.001635  Progress: 96.87%  Words/thread/sec: 21.46k  Alpha: 0.001564  Progress: 97.03%  Words/thread/sec: 21.45k  Alpha: 0.001487  Progress: 97.17%  Words/thread/sec: 21.45k  Alpha: 0.001417  Progress: 97.32%  Words/thread/sec: 21.45k  Alpha: 0.001342  Progress: 97.47%  Words/thread/sec: 21.46k  Alpha: 0.001267  Progress: 97.60%  Words/thread/sec: 21.47k  Alpha: 0.001200  Progress: 97.74%  Words/thread/sec: 21.45k  Alpha: 0.001128  Progress: 97.96%  Words/thread/sec: 21.46k  Alpha: 0.001022  Progress: 98.11%  Words/thread/sec: 21.48k  Alpha: 0.000947  Progress: 98.25%  Words/thread/sec: 21.46k  Alpha: 0.000873  Progress: 98.40%  Words/thread/sec: 21.47k  Alpha: 0.000800  Progress: 98.54%  Words/thread/sec: 21.48k  Alpha: 0.000728  Progress: 98.69%  Words/thread/sec: 21.46k  Alpha: 0.000656  Progress: 98.83%  Words/thread/sec: 21.47k  Alpha: 0.000585  Progress: 98.98%  Words/thread/sec: 21.48k  Alpha: 0.000509  Progress: 99.13%  Words/thread/sec: 21.46k  Alpha: 0.000436  Progress: 99.27%  Words/thread/sec: 21.47k  Alpha: 0.000366  Progress: 99.41%  Words/thread/sec: 21.48k  Alpha: 0.000294  Progress: 99.56%  Words/thread/sec: 21.47k  Alpha: 0.000221  Progress: 99.71%  Words/thread/sec: 21.47k  Alpha: 0.000147  Progress: 99.85%  Words/thread/sec: 21.48k  Alpha: 0.000077  Progress: 100.13%  Words/thread/sec: 21.50k  Alpha: 0.000005  Progress: 100.28%  Words/thread/sec: 21.51k  Alpha: 0.000005  Progress: 100.43%  Words/thread/sec: 21.51k  # started on Wed Mar  3 10:01:24 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          98,183.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             18,148      context-switches          #    0.185 K/sec                  
+S0-C0           1                524      cpu-migrations            #    0.005 K/sec                  
+S0-C0           1            132,025      page-faults               #    0.001 M/sec                  
+S0-C0           1      2,342,184,763      cycles                    #    0.024 GHz                    
+S0-C0           1        679,991,479      instructions              #    0.29  insn per cycle         
+S0-C0           1      1,543,896,391      branches                  #   15.725 M/sec                  
+S0-C0           1         86,544,903      branch-misses             #    5.61% of all branches        
+S0-C1           1          98,183.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,962      context-switches          #    0.051 K/sec                  
+S0-C1           1                524      cpu-migrations            #    0.005 K/sec                  
+S0-C1           1                 17      page-faults               #    0.000 K/sec                  
+S0-C1           1      1,874,164,611      cycles                    #    0.019 GHz                    
+S0-C1           1      1,892,863,529      instructions              #    1.01  insn per cycle         
+S0-C1           1      1,284,743,762      branches                  #   13.085 M/sec                  
+S0-C1           1         77,301,503      branch-misses             #    6.02% of all branches        
+S0-C2           1          98,183.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1             11,236      context-switches          #    0.114 K/sec                  
+S0-C2           1                499      cpu-migrations            #    0.005 K/sec                  
+S0-C2           1                 10      page-faults               #    0.000 K/sec                  
+S0-C2           1         84,834,093      cycles                    #    0.001 GHz                    
+S0-C2           1      2,504,399,088      instructions              #   29.52  insn per cycle         
+S0-C2           1      1,268,982,013      branches                  #   12.925 M/sec                  
+S0-C2           1         77,770,552      branch-misses             #    6.13% of all branches        
+S0-C3           1          98,183.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              5,524      context-switches          #    0.056 K/sec                  
+S0-C3           1                512      cpu-migrations            #    0.005 K/sec                  
+S0-C3           1                  8      page-faults               #    0.000 K/sec                  
+S0-C3           1      4,078,887,003      cycles                    #    0.042 GHz                    
+S0-C3           1      2,436,799,634      instructions              #    0.60  insn per cycle         
+S0-C3           1      1,258,426,470      branches                  #   12.817 M/sec                  
+S0-C3           1         75,524,651      branch-misses             #    6.00% of all branches        
+
+      98.184756256 seconds time elapsed
+
+================================================================================
+perf stat -o sqlite_4_threads.txt  --per-core -a taskset -c 0-3 ./sqlite_benchmark 4
+-- Speedtest1 for SQLite 3.31.1 2020-01-27 19:55:54 3bfa9cc97da10598521b342961df8f
+ 100 - 13000 INSERTs into table with no index...................... -- Speedtest1 for SQLite 3.31.1 2020-01-27 19:55:54 3bfa9cc97da10598521b342961df8f
+ 100 - 13000 INSERTs into table with no index...................... -- Speedtest1 for SQLite 3.31.1 2020-01-27 19:55:54 3bfa9cc97da10598521b342961df8f
+ 100 - 13000 INSERTs into table with no index...................... -- Speedtest1 for SQLite 3.31.1 2020-01-27 19:55:54 3bfa9cc97da10598521b342961df8f
+ 100 - 13000 INSERTs into table with no index......................    0.095s
+ 110 - 13000 ordered INSERTS with one index/PK.....................    0.095s
+ 110 - 13000 ordered INSERTS with one index/PK.....................    0.096s
+ 110 - 13000 ordered INSERTS with one index/PK.....................    0.097s
+ 110 - 13000 ordered INSERTS with one index/PK.....................    0.144s
+ 120 - 13000 unordered INSERTS with one index/PK...................    0.146s
+ 120 - 13000 unordered INSERTS with one index/PK...................    0.147s
+ 120 - 13000 unordered INSERTS with one index/PK...................    0.152s
+ 120 - 13000 unordered INSERTS with one index/PK...................    0.195s
+ 130 - 25 SELECTS, numeric BETWEEN, unindexed......................    0.196s
+ 130 - 25 SELECTS, numeric BETWEEN, unindexed......................    0.196s
+ 130 - 25 SELECTS, numeric BETWEEN, unindexed......................    0.198s
+ 130 - 25 SELECTS, numeric BETWEEN, unindexed......................    0.113s
+ 140 - 10 SELECTS, LIKE, unindexed.................................    0.113s
+ 140 - 10 SELECTS, LIKE, unindexed.................................    0.113s
+ 140 - 10 SELECTS, LIKE, unindexed.................................    0.116s
+ 140 - 10 SELECTS, LIKE, unindexed.................................    0.206s
+ 142 - 10 SELECTS w/ORDER BY, unindexed............................    0.201s
+ 142 - 10 SELECTS w/ORDER BY, unindexed............................    0.207s
+ 142 - 10 SELECTS w/ORDER BY, unindexed............................    0.207s
+ 142 - 10 SELECTS w/ORDER BY, unindexed............................    0.327s
+ 145 - 10 SELECTS w/ORDER BY and LIMIT, unindexed..................    0.333s
+ 145 - 10 SELECTS w/ORDER BY and LIMIT, unindexed..................    0.334s
+ 145 - 10 SELECTS w/ORDER BY and LIMIT, unindexed..................    0.337s
+ 145 - 10 SELECTS w/ORDER BY and LIMIT, unindexed..................    0.172s
+ 150 - CREATE INDEX five times.....................................    0.176s
+ 150 - CREATE INDEX five times.....................................    0.175s
+ 150 - CREATE INDEX five times.....................................    0.176s
+ 150 - CREATE INDEX five times.....................................    0.217s
+ 160 - 2600 SELECTS, numeric BETWEEN, indexed......................    0.219s
+ 160 - 2600 SELECTS, numeric BETWEEN, indexed......................    0.218s
+ 160 - 2600 SELECTS, numeric BETWEEN, indexed......................    0.221s
+ 160 - 2600 SELECTS, numeric BETWEEN, indexed......................    0.109s
+ 161 - 2600 SELECTS, numeric BETWEEN, PK...........................    0.105s
+ 161 - 2600 SELECTS, numeric BETWEEN, PK...........................    0.107s
+ 161 - 2600 SELECTS, numeric BETWEEN, PK...........................    0.106s
+ 161 - 2600 SELECTS, numeric BETWEEN, PK...........................    0.105s
+ 170 - 2600 SELECTS, text BETWEEN, indexed.........................    0.105s
+ 170 - 2600 SELECTS, text BETWEEN, indexed.........................    0.106s
+ 170 - 2600 SELECTS, text BETWEEN, indexed.........................    0.105s
+ 170 - 2600 SELECTS, text BETWEEN, indexed.........................    0.224s
+ 180 - 13000 INSERTS with three indexes............................    0.225s
+ 180 - 13000 INSERTS with three indexes............................    0.226s
+ 180 - 13000 INSERTS with three indexes............................    0.227s
+ 180 - 13000 INSERTS with three indexes............................    0.245s
+ 190 - DELETE and REFILL one table.................................    0.245s
+ 190 - DELETE and REFILL one table.................................    0.251s
+ 190 - DELETE and REFILL one table.................................    0.252s
+ 190 - DELETE and REFILL one table.................................    0.253s
+ 200 - VACUUM......................................................    0.253s
+ 200 - VACUUM......................................................    0.257s
+ 200 - VACUUM......................................................    0.258s
+ 200 - VACUUM......................................................    0.369s
+ 210 - ALTER TABLE ADD COLUMN, and query...........................    0.367s
+ 210 - ALTER TABLE ADD COLUMN, and query...........................    0.009s
+ 230 - 2600 UPDATES, numeric BETWEEN, indexed......................    0.008s
+ 230 - 2600 UPDATES, numeric BETWEEN, indexed......................    0.367s
+ 210 - ALTER TABLE ADD COLUMN, and query...........................    0.008s
+ 230 - 2600 UPDATES, numeric BETWEEN, indexed......................    0.369s
+ 210 - ALTER TABLE ADD COLUMN, and query...........................    0.008s
+ 230 - 2600 UPDATES, numeric BETWEEN, indexed......................    0.089s
+ 240 - 13000 UPDATES of individual rows............................    0.088s
+ 240 - 13000 UPDATES of individual rows............................    0.089s
+ 240 - 13000 UPDATES of individual rows............................    0.091s
+ 240 - 13000 UPDATES of individual rows............................    0.153s
+ 250 - One big UPDATE of the whole 13000-row table.................    0.152s
+ 250 - One big UPDATE of the whole 13000-row table.................    0.155s
+ 250 - One big UPDATE of the whole 13000-row table.................    0.156s
+ 250 - One big UPDATE of the whole 13000-row table.................    0.043s
+ 260 - Query added column after filling............................    0.043s
+ 260 - Query added column after filling............................    0.006s
+ 270 - 2600 DELETEs, numeric BETWEEN, indexed......................    0.006s
+ 270 - 2600 DELETEs, numeric BETWEEN, indexed......................    0.043s
+ 260 - Query added column after filling............................    0.007s
+ 270 - 2600 DELETEs, numeric BETWEEN, indexed......................    0.045s
+ 260 - Query added column after filling............................    0.007s
+ 270 - 2600 DELETEs, numeric BETWEEN, indexed......................    0.220s
+ 280 - 13000 DELETEs of individual rows............................    0.219s
+ 280 - 13000 DELETEs of individual rows............................    0.224s
+ 280 - 13000 DELETEs of individual rows............................    0.233s
+ 280 - 13000 DELETEs of individual rows............................    0.205s
+ 290 - Refill two 13000-row tables using REPLACE...................    0.205s
+ 290 - Refill two 13000-row tables using REPLACE...................    0.206s
+ 290 - Refill two 13000-row tables using REPLACE...................    0.209s
+ 290 - Refill two 13000-row tables using REPLACE...................    0.601s
+ 300 - Refill a 13000-row table using (b&1)==(a&1).................    0.600s
+ 300 - Refill a 13000-row table using (b&1)==(a&1).................    0.616s
+ 300 - Refill a 13000-row table using (b&1)==(a&1).................    0.614s
+ 300 - Refill a 13000-row table using (b&1)==(a&1).................    0.275s
+ 310 - 2600 four-ways joins........................................    0.276s
+ 310 - 2600 four-ways joins........................................    0.286s
+ 310 - 2600 four-ways joins........................................    0.289s
+ 310 - 2600 four-ways joins........................................    0.477s
+ 320 - subquery in result set......................................    0.476s
+ 320 - subquery in result set......................................    0.471s
+ 320 - subquery in result set......................................    0.470s
+ 320 - subquery in result set......................................    0.888s
+ 400 - 26000 REPLACE ops on an IPK.................................    0.888s
+ 400 - 26000 REPLACE ops on an IPK.................................    0.909s
+ 400 - 26000 REPLACE ops on an IPK.................................    0.902s
+ 400 - 26000 REPLACE ops on an IPK.................................    0.321s
+ 410 - 26000 SELECTS on an IPK.....................................    0.325s
+ 410 - 26000 SELECTS on an IPK.....................................    0.320s
+ 410 - 26000 SELECTS on an IPK.....................................    0.326s
+ 410 - 26000 SELECTS on an IPK.....................................    0.207s
+ 500 - 26000 REPLACE on TEXT PK....................................    0.207s
+ 500 - 26000 REPLACE on TEXT PK....................................    0.209s
+ 500 - 26000 REPLACE on TEXT PK....................................    0.210s
+ 500 - 26000 REPLACE on TEXT PK....................................    0.327s
+ 510 - 26000 SELECTS on a TEXT PK..................................    0.329s
+ 510 - 26000 SELECTS on a TEXT PK..................................    0.324s
+ 510 - 26000 SELECTS on a TEXT PK..................................    0.326s
+ 510 - 26000 SELECTS on a TEXT PK..................................    0.336s
+ 520 - 26000 SELECT DISTINCT.......................................    0.338s
+ 520 - 26000 SELECT DISTINCT.......................................    0.337s
+ 520 - 26000 SELECT DISTINCT.......................................    0.342s
+ 520 - 26000 SELECT DISTINCT.......................................    0.229s
+ 980 - PRAGMA integrity_check......................................    0.231s
+ 980 - PRAGMA integrity_check......................................    0.237s
+ 980 - PRAGMA integrity_check......................................    0.241s
+ 980 - PRAGMA integrity_check......................................    0.465s
+ 990 - ANALYZE.....................................................    0.462s
+ 990 - ANALYZE.....................................................    0.464s
+ 990 - ANALYZE.....................................................    0.072s
+       TOTAL.......................................................    7.707s
+   0.072s
+       TOTAL.......................................................    7.703s
+   0.460s
+ 990 - ANALYZE.....................................................    0.071s
+       TOTAL.......................................................    7.771s
+   0.071s
+       TOTAL.......................................................    7.817s
+SUCCESS::pthread_create() succeeded for command ./speedtest1 --size 130
+SUCCESS::pthread_create() succeeded for command ./speedtest1 --size 130
+SUCCESS::pthread_create() succeeded for command ./speedtest1 --size 130
+SUCCESS::pthread_create() succeeded for command ./speedtest1 --size 130
+SUCCESS::system(./speedtest1 --size 130) succeeded
+SUCCESS::system(./speedtest1 --size 130) succeeded
+SUCCESS::system(./speedtest1 --size 130) succeeded
+SUCCESS::system(./speedtest1 --size 130) succeeded
+# started on Wed Mar  3 10:03:02 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1           7,859.96 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              1,480      context-switches          #    0.188 K/sec                  
+S0-C0           1                 95      cpu-migrations            #    0.012 K/sec                  
+S0-C0           1              1,837      page-faults               #    0.234 K/sec                  
+S0-C0           1      1,620,282,194      cycles                    #    0.206 GHz                    
+S0-C0           1        619,205,752      instructions              #    0.38  insn per cycle         
+S0-C0           1        609,502,944      branches                  #   77.545 M/sec                  
+S0-C0           1         86,226,740      branch-misses             #   14.15% of all branches        
+S0-C1           1           7,859.96 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              1,128      context-switches          #    0.144 K/sec                  
+S0-C1           1                116      cpu-migrations            #    0.015 K/sec                  
+S0-C1           1              1,829      page-faults               #    0.233 K/sec                  
+S0-C1           1      1,478,950,251      cycles                    #    0.188 GHz                    
+S0-C1           1        605,201,325      instructions              #    0.41  insn per cycle         
+S0-C1           1        607,490,128      branches                  #   77.289 M/sec                  
+S0-C1           1         86,276,729      branch-misses             #   14.20% of all branches        
+S0-C2           1           7,859.96 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              1,228      context-switches          #    0.156 K/sec                  
+S0-C2           1                108      cpu-migrations            #    0.014 K/sec                  
+S0-C2           1              1,956      page-faults               #    0.249 K/sec                  
+S0-C2           1      1,484,422,256      cycles                    #    0.189 GHz                    
+S0-C2           1        602,331,858      instructions              #    0.41  insn per cycle         
+S0-C2           1        607,124,514      branches                  #   77.243 M/sec                  
+S0-C2           1         86,820,638      branch-misses             #   14.30% of all branches        
+S0-C3           1           7,859.96 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1                817      context-switches          #    0.104 K/sec                  
+S0-C3           1                110      cpu-migrations            #    0.014 K/sec                  
+S0-C3           1              1,849      page-faults               #    0.235 K/sec                  
+S0-C3           1      1,562,269,959      cycles                    #    0.199 GHz                    
+S0-C3           1        615,396,922      instructions              #    0.39  insn per cycle         
+S0-C3           1        608,762,413      branches                  #   77.451 M/sec                  
+S0-C3           1         86,180,076      branch-misses             #   14.16% of all branches        
+
+       7.860419145 seconds time elapsed
+
+================================================================================
+perf stat -o go_word2vec_4_threads.txt  --per-core -a taskset -c 0-3 ./go_word2vec.sh 4
+/home/mendel/sd_card/i-benchmarks/golang/bin
+Save trained vectors to example/word_vectors_sg.txt
+# started on Wed Mar  3 10:03:10 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          36,797.88 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              9,773      context-switches          #    0.266 K/sec                  
+S0-C0           1                 52      cpu-migrations            #    0.001 K/sec                  
+S0-C0           1                224      page-faults               #    0.006 K/sec                  
+S0-C0           1      1,667,841,646      cycles                    #    0.045 GHz                    
+S0-C0           1      3,060,877,388      instructions              #    1.84  insn per cycle         
+S0-C0           1      1,862,897,995      branches                  #   50.625 M/sec                  
+S0-C0           1         33,191,075      branch-misses             #    1.78% of all branches        
+S0-C1           1          36,797.88 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              7,767      context-switches          #    0.211 K/sec                  
+S0-C1           1                 47      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1             19,166      page-faults               #    0.521 K/sec                  
+S0-C1           1      3,188,583,295      cycles                    #    0.087 GHz                    
+S0-C1           1      2,784,107,341      instructions              #    0.87  insn per cycle         
+S0-C1           1      2,221,365,165      branches                  #   60.367 M/sec                  
+S0-C1           1         60,497,536      branch-misses             #    2.72% of all branches        
+S0-C2           1          36,797.88 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              5,347      context-switches          #    0.145 K/sec                  
+S0-C2           1                 35      cpu-migrations            #    0.001 K/sec                  
+S0-C2           1             14,375      page-faults               #    0.391 K/sec                  
+S0-C2           1      2,977,457,873      cycles                    #    0.081 GHz                    
+S0-C2           1      2,972,018,105      instructions              #    1.00  insn per cycle         
+S0-C2           1      2,234,302,315      branches                  #   60.718 M/sec                  
+S0-C2           1         63,226,472      branch-misses             #    2.83% of all branches        
+S0-C3           1          36,797.85 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              5,444      context-switches          #    0.148 K/sec                  
+S0-C3           1                 29      cpu-migrations            #    0.001 K/sec                  
+S0-C3           1                271      page-faults               #    0.007 K/sec                  
+S0-C3           1      1,570,073,495      cycles                    #    0.043 GHz                    
+S0-C3           1      3,159,659,674      instructions              #    2.01  insn per cycle         
+S0-C3           1      1,869,717,238      branches                  #   50.811 M/sec                  
+S0-C3           1         31,744,160      branch-misses             #    1.70% of all branches        
+
+      36.798372135 seconds time elapsed
+
+================================================================================
+================================================================================
+Running run_forest_importances_faces test
+perf stat -o ../output/run_forest_importances_faces.log --per-core -a taskset -c 0-3 ./run_forest_importances_faces.sh -n 4
+
+=================================================
+Pixel importances with a parallel forest of trees
+=================================================
+
+This example shows the use of forests of trees to evaluate the importance
+of the pixels in an image classification task (faces). The hotter the pixel,
+the more important.
+
+The code below also illustrates how the construction and the computation
+of the predictions can be parallelized within multiple jobs.
+
+Fitting ExtraTreesClassifier on faces data with 1 cores...
+done in 12.346s
+
+=================================================
+Pixel importances with a parallel forest of trees
+=================================================
+
+This example shows the use of forests of trees to evaluate the importance
+of the pixels in an image classification task (faces). The hotter the pixel,
+the more important.
+
+The code below also illustrates how the construction and the computation
+of the predictions can be parallelized within multiple jobs.
+
+Fitting ExtraTreesClassifier on faces data with 1 cores...
+done in 12.387s
+
+=================================================
+Pixel importances with a parallel forest of trees
+=================================================
+
+This example shows the use of forests of trees to evaluate the importance
+of the pixels in an image classification task (faces). The hotter the pixel,
+the more important.
+
+The code below also illustrates how the construction and the computation
+of the predictions can be parallelized within multiple jobs.
+
+Fitting ExtraTreesClassifier on faces data with 1 cores...
+done in 12.544s
+
+=================================================
+Pixel importances with a parallel forest of trees
+=================================================
+
+This example shows the use of forests of trees to evaluate the importance
+of the pixels in an image classification task (faces). The hotter the pixel,
+the more important.
+
+The code below also illustrates how the construction and the computation
+of the predictions can be parallelized within multiple jobs.
+
+Fitting ExtraTreesClassifier on faces data with 1 cores...
+done in 12.565s
+/home/mendel/sd_card/i-benchmarks/scikit/bin
+# started on Wed Mar  3 10:03:47 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          21,857.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              2,986      context-switches          #    0.137 K/sec                  
+S0-C0           1                 65      cpu-migrations            #    0.003 K/sec                  
+S0-C0           1             41,779      page-faults               #    0.002 M/sec                  
+S0-C0           1      2,624,530,833      cycles                    #    0.120 GHz                    
+S0-C0           1      2,375,156,668      instructions              #    0.90  insn per cycle         
+S0-C0           1        735,787,645      branches                  #   33.663 M/sec                  
+S0-C0           1        183,056,618      branch-misses             #   24.88% of all branches        
+S0-C1           1          21,857.23 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,790      context-switches          #    0.128 K/sec                  
+S0-C1           1                 75      cpu-migrations            #    0.003 K/sec                  
+S0-C1           1             41,073      page-faults               #    0.002 M/sec                  
+S0-C1           1      2,199,414,773      cycles                    #    0.101 GHz                    
+S0-C1           1      2,352,522,596      instructions              #    1.07  insn per cycle         
+S0-C1           1        733,009,745      branches                  #   33.536 M/sec                  
+S0-C1           1        183,491,311      branch-misses             #   25.03% of all branches        
+S0-C2           1          21,857.23 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              1,847      context-switches          #    0.085 K/sec                  
+S0-C2           1                 81      cpu-migrations            #    0.004 K/sec                  
+S0-C2           1             42,390      page-faults               #    0.002 M/sec                  
+S0-C2           1      2,350,405,659      cycles                    #    0.108 GHz                    
+S0-C2           1      2,442,735,686      instructions              #    1.04  insn per cycle         
+S0-C2           1        742,075,094      branches                  #   33.951 M/sec                  
+S0-C2           1        184,563,818      branch-misses             #   24.87% of all branches        
+S0-C3           1          21,857.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              1,935      context-switches          #    0.089 K/sec                  
+S0-C3           1                 77      cpu-migrations            #    0.004 K/sec                  
+S0-C3           1             42,635      page-faults               #    0.002 M/sec                  
+S0-C3           1      2,427,520,722      cycles                    #    0.111 GHz                    
+S0-C3           1      2,435,614,283      instructions              #    1.00  insn per cycle         
+S0-C3           1        745,561,238      branches                  #   34.111 M/sec                  
+S0-C3           1        182,336,816      branch-misses             #   24.46% of all branches        
+
+      21.857642501 seconds time elapsed
+
+================================================================================
+Running run_multioutput_face_completion test
+perf stat -o ../output/run_multioutput_face_completion.log --per-core -a taskset -c 0-3 ./run_multioutput_face_completion.sh -n 4
+
+==============================================
+Face completion with a multi-output estimators
+==============================================
+
+This example shows the use of multi-output estimator to complete images.
+The goal is to predict the lower half of a face given its upper half.
+
+The first column of images shows true faces. The next columns illustrate
+how extremely randomized trees, k nearest neighbors, linear
+regression and ridge regression complete the lower half of those faces.
+
+
+
+==============================================
+Face completion with a multi-output estimators
+==============================================
+
+This example shows the use of multi-output estimator to complete images.
+The goal is to predict the lower half of a face given its upper half.
+
+The first column of images shows true faces. The next columns illustrate
+how extremely randomized trees, k nearest neighbors, linear
+regression and ridge regression complete the lower half of those faces.
+
+
+
+==============================================
+Face completion with a multi-output estimators
+==============================================
+
+This example shows the use of multi-output estimator to complete images.
+The goal is to predict the lower half of a face given its upper half.
+
+The first column of images shows true faces. The next columns illustrate
+how extremely randomized trees, k nearest neighbors, linear
+regression and ridge regression complete the lower half of those faces.
+
+
+
+==============================================
+Face completion with a multi-output estimators
+==============================================
+
+This example shows the use of multi-output estimator to complete images.
+The goal is to predict the lower half of a face given its upper half.
+
+The first column of images shows true faces. The next columns illustrate
+how extremely randomized trees, k nearest neighbors, linear
+regression and ridge regression complete the lower half of those faces.
+
+
+/home/mendel/sd_card/i-benchmarks/scikit/bin
+# started on Wed Mar  3 10:04:09 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          49,552.39 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              5,575      context-switches          #    0.113 K/sec                  
+S0-C0           1                127      cpu-migrations            #    0.003 K/sec                  
+S0-C0           1            117,973      page-faults               #    0.002 M/sec                  
+S0-C0           1      4,127,910,158      cycles                    #    0.083 GHz                    
+S0-C0           1      2,943,419,753      instructions              #    0.71  insn per cycle         
+S0-C0           1      1,461,774,418      branches                  #   29.500 M/sec                  
+S0-C0           1        120,529,167      branch-misses             #    8.25% of all branches        
+S0-C1           1          49,552.39 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,978      context-switches          #    0.060 K/sec                  
+S0-C1           1                117      cpu-migrations            #    0.002 K/sec                  
+S0-C1           1            121,190      page-faults               #    0.002 M/sec                  
+S0-C1           1      4,084,064,741      cycles                    #    0.082 GHz                    
+S0-C1           1      2,946,154,207      instructions              #    0.72  insn per cycle         
+S0-C1           1      1,461,334,838      branches                  #   29.491 M/sec                  
+S0-C1           1        118,445,649      branch-misses             #    8.11% of all branches        
+S0-C2           1          49,552.40 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              6,118      context-switches          #    0.123 K/sec                  
+S0-C2           1                 98      cpu-migrations            #    0.002 K/sec                  
+S0-C2           1            121,824      page-faults               #    0.002 M/sec                  
+S0-C2           1      4,124,908,556      cycles                    #    0.083 GHz                    
+S0-C2           1      2,964,380,941      instructions              #    0.72  insn per cycle         
+S0-C2           1      1,463,681,974      branches                  #   29.538 M/sec                  
+S0-C2           1        120,391,989      branch-misses             #    8.23% of all branches        
+S0-C3           1          49,552.39 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,480      context-switches          #    0.070 K/sec                  
+S0-C3           1                102      cpu-migrations            #    0.002 K/sec                  
+S0-C3           1            125,768      page-faults               #    0.003 M/sec                  
+S0-C3           1      4,264,856,735      cycles                    #    0.086 GHz                    
+S0-C3           1      2,946,483,566      instructions              #    0.69  insn per cycle         
+S0-C3           1      1,462,165,011      branches                  #   29.507 M/sec                  
+S0-C3           1        119,876,423      branch-misses             #    8.20% of all branches        
+
+      49.552960495 seconds time elapsed
+
+================================================================================
+Running run_logistic_path test
+perf stat -o ../output/run_logistic_path.log --per-core -a taskset -c 0-3 ./run_logistic_path.sh -n 4
+
+==============================================
+Regularization path of L1- Logistic Regression
+==============================================
+
+
+Train l1-penalized logistic regression models on a binary classification
+problem derived from the Iris dataset.
+
+The models are ordered from strongest regularized to least regularized. The 4
+coefficients of the models are collected and plotted as a "regularization
+path": on the left-hand side of the figure (strong regularizers), all the
+coefficients are exactly 0. When regularization gets progressively looser,
+coefficients can get non-zero values one after the other.
+
+Here we choose the SAGA solver because it can efficiently optimize for the
+Logistic Regression loss with a non-smooth, sparsity inducing l1 penalty.
+
+Also note that we set a low value for the tolerance to make sure that the model
+has converged before collecting the coefficients.
+
+We also use warm_start=True which means that the coefficients of the models are
+reused to initialize the next model fit to speed-up the computation of the
+full-path.
+
+
+Computing regularization path ...
+This took 32.950s
+
+==============================================
+Regularization path of L1- Logistic Regression
+==============================================
+
+
+Train l1-penalized logistic regression models on a binary classification
+problem derived from the Iris dataset.
+
+The models are ordered from strongest regularized to least regularized. The 4
+coefficients of the models are collected and plotted as a "regularization
+path": on the left-hand side of the figure (strong regularizers), all the
+coefficients are exactly 0. When regularization gets progressively looser,
+coefficients can get non-zero values one after the other.
+
+Here we choose the SAGA solver because it can efficiently optimize for the
+Logistic Regression loss with a non-smooth, sparsity inducing l1 penalty.
+
+Also note that we set a low value for the tolerance to make sure that the model
+has converged before collecting the coefficients.
+
+We also use warm_start=True which means that the coefficients of the models are
+reused to initialize the next model fit to speed-up the computation of the
+full-path.
+
+
+Computing regularization path ...
+This took 33.178s
+
+==============================================
+Regularization path of L1- Logistic Regression
+==============================================
+
+
+Train l1-penalized logistic regression models on a binary classification
+problem derived from the Iris dataset.
+
+The models are ordered from strongest regularized to least regularized. The 4
+coefficients of the models are collected and plotted as a "regularization
+path": on the left-hand side of the figure (strong regularizers), all the
+coefficients are exactly 0. When regularization gets progressively looser,
+coefficients can get non-zero values one after the other.
+
+Here we choose the SAGA solver because it can efficiently optimize for the
+Logistic Regression loss with a non-smooth, sparsity inducing l1 penalty.
+
+Also note that we set a low value for the tolerance to make sure that the model
+has converged before collecting the coefficients.
+
+We also use warm_start=True which means that the coefficients of the models are
+reused to initialize the next model fit to speed-up the computation of the
+full-path.
+
+
+Computing regularization path ...
+This took 33.637s
+
+==============================================
+Regularization path of L1- Logistic Regression
+==============================================
+
+
+Train l1-penalized logistic regression models on a binary classification
+problem derived from the Iris dataset.
+
+The models are ordered from strongest regularized to least regularized. The 4
+coefficients of the models are collected and plotted as a "regularization
+path": on the left-hand side of the figure (strong regularizers), all the
+coefficients are exactly 0. When regularization gets progressively looser,
+coefficients can get non-zero values one after the other.
+
+Here we choose the SAGA solver because it can efficiently optimize for the
+Logistic Regression loss with a non-smooth, sparsity inducing l1 penalty.
+
+Also note that we set a low value for the tolerance to make sure that the model
+has converged before collecting the coefficients.
+
+We also use warm_start=True which means that the coefficients of the models are
+reused to initialize the next model fit to speed-up the computation of the
+full-path.
+
+
+Computing regularization path ...
+This took 33.455s
+/home/mendel/sd_card/i-benchmarks/scikit/bin
+# started on Wed Mar  3 10:04:59 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          41,234.46 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              6,628      context-switches          #    0.161 K/sec                  
+S0-C0           1                 82      cpu-migrations            #    0.002 K/sec                  
+S0-C0           1             24,582      page-faults               #    0.596 K/sec                  
+S0-C0           1      1,163,550,890      cycles                    #    0.028 GHz                    
+S0-C0           1      4,122,565,404      instructions              #    3.54  insn per cycle         
+S0-C0           1      2,619,432,772      branches                  #   63.525 M/sec                  
+S0-C0           1        485,937,779      branch-misses             #   18.55% of all branches        
+S0-C1           1          41,234.46 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,735      context-switches          #    0.066 K/sec                  
+S0-C1           1                 62      cpu-migrations            #    0.002 K/sec                  
+S0-C1           1             25,619      page-faults               #    0.621 K/sec                  
+S0-C1           1      1,986,438,331      cycles                    #    0.048 GHz                    
+S0-C1           1      4,150,341,815      instructions              #    2.09  insn per cycle         
+S0-C1           1      2,622,658,891      branches                  #   63.604 M/sec                  
+S0-C1           1        479,365,331      branch-misses             #   18.28% of all branches        
+S0-C2           1          41,234.46 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,421      context-switches          #    0.083 K/sec                  
+S0-C2           1                 78      cpu-migrations            #    0.002 K/sec                  
+S0-C2           1             27,893      page-faults               #    0.676 K/sec                  
+S0-C2           1      2,011,831,621      cycles                    #    0.049 GHz                    
+S0-C2           1      4,246,168,326      instructions              #    2.11  insn per cycle         
+S0-C2           1      2,634,684,559      branches                  #   63.895 M/sec                  
+S0-C2           1        483,559,060      branch-misses             #   18.35% of all branches        
+S0-C3           1          41,234.46 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,457      context-switches          #    0.084 K/sec                  
+S0-C3           1                 62      cpu-migrations            #    0.002 K/sec                  
+S0-C3           1             27,215      page-faults               #    0.660 K/sec                  
+S0-C3           1      1,342,684,681      cycles                    #    0.033 GHz                    
+S0-C3           1      4,252,711,134      instructions              #    3.17  insn per cycle         
+S0-C3           1      2,636,416,474      branches                  #   63.937 M/sec                  
+S0-C3           1        491,787,816      branch-misses             #   18.65% of all branches        
+
+      41.234986262 seconds time elapsed
+
+================================================================================
+Running run_plot_svm_nonlinear test
+perf stat -o ../output/run_plot_svm_nonlinear.log --per-core -a taskset -c 0-3 ./run_plot_svm_nonlinear.sh -n 4
+
+==============
+Non-linear SVM
+==============
+
+Perform binary classification using non-linear SVC
+with RBF kernel. The target to predict is a XOR of the
+inputs.
+
+The color map illustrates the decision function learned by the SVC.
+
+
+==============
+Non-linear SVM
+==============
+
+Perform binary classification using non-linear SVC
+with RBF kernel. The target to predict is a XOR of the
+inputs.
+
+The color map illustrates the decision function learned by the SVC.
+
+
+==============
+Non-linear SVM
+==============
+
+Perform binary classification using non-linear SVC
+with RBF kernel. The target to predict is a XOR of the
+inputs.
+
+The color map illustrates the decision function learned by the SVC.
+
+
+==============
+Non-linear SVM
+==============
+
+Perform binary classification using non-linear SVC
+with RBF kernel. The target to predict is a XOR of the
+inputs.
+
+The color map illustrates the decision function learned by the SVC.
+
+/home/mendel/sd_card/i-benchmarks/scikit/bin
+# started on Wed Mar  3 10:05:40 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          14,807.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              1,992      context-switches          #    0.135 K/sec                  
+S0-C0           1                 62      cpu-migrations            #    0.004 K/sec                  
+S0-C0           1             30,252      page-faults               #    0.002 M/sec                  
+S0-C0           1      1,959,991,825      cycles                    #    0.132 GHz                    
+S0-C0           1         54,951,607      instructions              #    0.03  insn per cycle         
+S0-C0           1        900,686,690      branches                  #   60.825 M/sec                  
+S0-C0           1         78,357,890      branch-misses             #    8.70% of all branches        
+S0-C1           1          14,807.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              1,252      context-switches          #    0.085 K/sec                  
+S0-C1           1                 72      cpu-migrations            #    0.005 K/sec                  
+S0-C1           1             30,759      page-faults               #    0.002 M/sec                  
+S0-C1           1      1,925,571,593      cycles                    #    0.130 GHz                    
+S0-C1           1         97,560,906      instructions              #    0.05  insn per cycle         
+S0-C1           1        905,981,751      branches                  #   61.182 M/sec                  
+S0-C1           1         78,649,588      branch-misses             #    8.68% of all branches        
+S0-C2           1          14,807.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              2,155      context-switches          #    0.146 K/sec                  
+S0-C2           1                 71      cpu-migrations            #    0.005 K/sec                  
+S0-C2           1             31,446      page-faults               #    0.002 M/sec                  
+S0-C2           1      2,037,502,851      cycles                    #    0.138 GHz                    
+S0-C2           1        147,771,020      instructions              #    0.07  insn per cycle         
+S0-C2           1        911,943,347      branches                  #   61.585 M/sec                  
+S0-C2           1         79,246,131      branch-misses             #    8.69% of all branches        
+S0-C3           1          14,807.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              1,486      context-switches          #    0.100 K/sec                  
+S0-C3           1                 65      cpu-migrations            #    0.004 K/sec                  
+S0-C3           1             30,927      page-faults               #    0.002 M/sec                  
+S0-C3           1      1,942,150,821      cycles                    #    0.131 GHz                    
+S0-C3           1        104,604,956      instructions              #    0.05  insn per cycle         
+S0-C3           1        906,618,821      branches                  #   61.225 M/sec                  
+S0-C3           1         79,099,312      branch-misses             #    8.72% of all branches        
+
+      14.808257359 seconds time elapsed
+
+================================================================================
+Running run_plot_theilsen test
+perf stat -o ../output/run_plot_theilsen.log --per-core -a taskset -c 0-3 ./run_plot_theilsen.sh -n 4
+
+====================
+Theil-Sen Regression
+====================
+
+Computes a Theil-Sen Regression on a synthetic dataset.
+
+See :ref:`theil_sen_regression` for more information on the regressor.
+
+Compared to the OLS (ordinary least squares) estimator, the Theil-Sen
+estimator is robust against outliers. It has a breakdown point of about 29.3%
+in case of a simple linear regression which means that it can tolerate
+arbitrary corrupted data (outliers) of up to 29.3% in the two-dimensional
+case.
+
+The estimation of the model is done by calculating the slopes and intercepts
+of a subpopulation of all possible combinations of p subsample points. If an
+intercept is fitted, p must be greater than or equal to n_features + 1. The
+final slope and intercept is then defined as the spatial median of these
+slopes and intercepts.
+
+In certain cases Theil-Sen performs better than :ref:`RANSAC
+<ransac_regression>` which is also a robust method. This is illustrated in the
+second example below where outliers with respect to the x-axis perturb RANSAC.
+Tuning the ``residual_threshold`` parameter of RANSAC remedies this but in
+general a priori knowledge about the data and the nature of the outliers is
+needed.
+Due to the computational complexity of Theil-Sen it is recommended to use it
+only for small problems in terms of number of samples and features. For larger
+problems the ``max_subpopulation`` parameter restricts the magnitude of all
+possible combinations of p subsample points to a randomly chosen subset and
+therefore also limits the runtime. Therefore, Theil-Sen is applicable to larger
+problems with the drawback of losing some of its mathematical properties since
+it then works on a random subset.
+
+
+====================
+Theil-Sen Regression
+====================
+
+Computes a Theil-Sen Regression on a synthetic dataset.
+
+See :ref:`theil_sen_regression` for more information on the regressor.
+
+Compared to the OLS (ordinary least squares) estimator, the Theil-Sen
+estimator is robust against outliers. It has a breakdown point of about 29.3%
+in case of a simple linear regression which means that it can tolerate
+arbitrary corrupted data (outliers) of up to 29.3% in the two-dimensional
+case.
+
+The estimation of the model is done by calculating the slopes and intercepts
+of a subpopulation of all possible combinations of p subsample points. If an
+intercept is fitted, p must be greater than or equal to n_features + 1. The
+final slope and intercept is then defined as the spatial median of these
+slopes and intercepts.
+
+In certain cases Theil-Sen performs better than :ref:`RANSAC
+<ransac_regression>` which is also a robust method. This is illustrated in the
+second example below where outliers with respect to the x-axis perturb RANSAC.
+Tuning the ``residual_threshold`` parameter of RANSAC remedies this but in
+general a priori knowledge about the data and the nature of the outliers is
+needed.
+Due to the computational complexity of Theil-Sen it is recommended to use it
+only for small problems in terms of number of samples and features. For larger
+problems the ``max_subpopulation`` parameter restricts the magnitude of all
+possible combinations of p subsample points to a randomly chosen subset and
+therefore also limits the runtime. Therefore, Theil-Sen is applicable to larger
+problems with the drawback of losing some of its mathematical properties since
+it then works on a random subset.
+
+
+====================
+Theil-Sen Regression
+====================
+
+Computes a Theil-Sen Regression on a synthetic dataset.
+
+See :ref:`theil_sen_regression` for more information on the regressor.
+
+Compared to the OLS (ordinary least squares) estimator, the Theil-Sen
+estimator is robust against outliers. It has a breakdown point of about 29.3%
+in case of a simple linear regression which means that it can tolerate
+arbitrary corrupted data (outliers) of up to 29.3% in the two-dimensional
+case.
+
+The estimation of the model is done by calculating the slopes and intercepts
+of a subpopulation of all possible combinations of p subsample points. If an
+intercept is fitted, p must be greater than or equal to n_features + 1. The
+final slope and intercept is then defined as the spatial median of these
+slopes and intercepts.
+
+In certain cases Theil-Sen performs better than :ref:`RANSAC
+<ransac_regression>` which is also a robust method. This is illustrated in the
+second example below where outliers with respect to the x-axis perturb RANSAC.
+Tuning the ``residual_threshold`` parameter of RANSAC remedies this but in
+general a priori knowledge about the data and the nature of the outliers is
+needed.
+Due to the computational complexity of Theil-Sen it is recommended to use it
+only for small problems in terms of number of samples and features. For larger
+problems the ``max_subpopulation`` parameter restricts the magnitude of all
+possible combinations of p subsample points to a randomly chosen subset and
+therefore also limits the runtime. Therefore, Theil-Sen is applicable to larger
+problems with the drawback of losing some of its mathematical properties since
+it then works on a random subset.
+
+
+====================
+Theil-Sen Regression
+====================
+
+Computes a Theil-Sen Regression on a synthetic dataset.
+
+See :ref:`theil_sen_regression` for more information on the regressor.
+
+Compared to the OLS (ordinary least squares) estimator, the Theil-Sen
+estimator is robust against outliers. It has a breakdown point of about 29.3%
+in case of a simple linear regression which means that it can tolerate
+arbitrary corrupted data (outliers) of up to 29.3% in the two-dimensional
+case.
+
+The estimation of the model is done by calculating the slopes and intercepts
+of a subpopulation of all possible combinations of p subsample points. If an
+intercept is fitted, p must be greater than or equal to n_features + 1. The
+final slope and intercept is then defined as the spatial median of these
+slopes and intercepts.
+
+In certain cases Theil-Sen performs better than :ref:`RANSAC
+<ransac_regression>` which is also a robust method. This is illustrated in the
+second example below where outliers with respect to the x-axis perturb RANSAC.
+Tuning the ``residual_threshold`` parameter of RANSAC remedies this but in
+general a priori knowledge about the data and the nature of the outliers is
+needed.
+Due to the computational complexity of Theil-Sen it is recommended to use it
+only for small problems in terms of number of samples and features. For larger
+problems the ``max_subpopulation`` parameter restricts the magnitude of all
+possible combinations of p subsample points to a randomly chosen subset and
+therefore also limits the runtime. Therefore, Theil-Sen is applicable to larger
+problems with the drawback of losing some of its mathematical properties since
+it then works on a random subset.
+
+/home/mendel/sd_card/i-benchmarks/scikit/bin
+# started on Wed Mar  3 10:05:55 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          34,987.93 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              3,863      context-switches          #    0.110 K/sec                  
+S0-C0           1                 55      cpu-migrations            #    0.002 K/sec                  
+S0-C0           1             46,259      page-faults               #    0.001 M/sec                  
+S0-C0           1      2,516,898,980      cycles                    #    0.072 GHz                    
+S0-C0           1        999,286,017      instructions              #    0.40  insn per cycle         
+S0-C0           1      1,133,173,331      branches                  #   32.388 M/sec                  
+S0-C0           1        329,490,081      branch-misses             #   29.08% of all branches        
+S0-C1           1          34,987.93 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,101      context-switches          #    0.060 K/sec                  
+S0-C1           1                 70      cpu-migrations            #    0.002 K/sec                  
+S0-C1           1             46,630      page-faults               #    0.001 M/sec                  
+S0-C1           1      2,438,107,020      cycles                    #    0.070 GHz                    
+S0-C1           1      1,022,297,387      instructions              #    0.42  insn per cycle         
+S0-C1           1      1,135,190,646      branches                  #   32.445 M/sec                  
+S0-C1           1        328,063,499      branch-misses             #   28.90% of all branches        
+S0-C2           1          34,987.93 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,082      context-switches          #    0.088 K/sec                  
+S0-C2           1                 60      cpu-migrations            #    0.002 K/sec                  
+S0-C2           1             46,681      page-faults               #    0.001 M/sec                  
+S0-C2           1      2,495,024,476      cycles                    #    0.071 GHz                    
+S0-C2           1      1,025,881,205      instructions              #    0.41  insn per cycle         
+S0-C2           1      1,135,924,368      branches                  #   32.466 M/sec                  
+S0-C2           1        327,651,155      branch-misses             #   28.84% of all branches        
+S0-C3           1          34,987.93 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,186      context-switches          #    0.091 K/sec                  
+S0-C3           1                 58      cpu-migrations            #    0.002 K/sec                  
+S0-C3           1             47,388      page-faults               #    0.001 M/sec                  
+S0-C3           1      2,496,429,067      cycles                    #    0.071 GHz                    
+S0-C3           1      1,043,534,927      instructions              #    0.42  insn per cycle         
+S0-C3           1      1,138,003,342      branches                  #   32.526 M/sec                  
+S0-C3           1        330,940,283      branch-misses             #   29.08% of all branches        
+
+      34.988413128 seconds time elapsed
+
+================================================================================
+================================================================================
+perf stat -o 099_go.log --per-core -a taskset -c 0-3 ./spec95_099_go.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:06:30 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          48,792.06 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              4,931      context-switches          #    0.101 K/sec                  
+S0-C0           1                 11      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1                545      page-faults               #    0.011 K/sec                  
+S0-C0           1      3,107,190,223      cycles                    #    0.064 GHz                    
+S0-C0           1      1,347,378,761      instructions              #    0.43  insn per cycle         
+S0-C0           1      2,632,070,706      branches                  #   53.945 M/sec                  
+S0-C0           1      1,080,561,927      branch-misses             #   41.05% of all branches        
+S0-C1           1          48,792.06 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              5,118      context-switches          #    0.105 K/sec                  
+S0-C1           1                 10      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1                253      page-faults               #    0.005 K/sec                  
+S0-C1           1      2,937,116,325      cycles                    #    0.060 GHz                    
+S0-C1           1      1,338,286,394      instructions              #    0.46  insn per cycle         
+S0-C1           1      2,630,643,690      branches                  #   53.915 M/sec                  
+S0-C1           1      1,080,445,517      branch-misses             #   41.07% of all branches        
+S0-C2           1          48,792.06 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              2,263      context-switches          #    0.046 K/sec                  
+S0-C2           1                  5      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1                264      page-faults               #    0.005 K/sec                  
+S0-C2           1      2,928,848,542      cycles                    #    0.060 GHz                    
+S0-C2           1      1,317,910,948      instructions              #    0.45  insn per cycle         
+S0-C2           1      2,628,240,329      branches                  #   53.866 M/sec                  
+S0-C2           1      1,079,361,373      branch-misses             #   41.07% of all branches        
+S0-C3           1          48,792.06 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              2,144      context-switches          #    0.044 K/sec                  
+S0-C3           1                  3      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1                395      page-faults               #    0.008 K/sec                  
+S0-C3           1      3,285,382,392      cycles                    #    0.067 GHz                    
+S0-C3           1      1,317,015,017      instructions              #    0.40  insn per cycle         
+S0-C3           1      2,627,932,618      branches                  #   53.860 M/sec                  
+S0-C3           1      1,079,379,759      branch-misses             #   41.07% of all branches        
+
+      48.792661016 seconds time elapsed
+
+================================================================================
+perf stat -o 101_tomcatv.log --per-core -a taskset -c 0-3 ./spec95_101_tomcatv.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:07:19 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          75,451.48 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             12,878      context-switches          #    0.171 K/sec                  
+S0-C0           1                 25      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              3,828      page-faults               #    0.051 K/sec                  
+S0-C0           1      3,581,938,936      cycles                    #    0.047 GHz                    
+S0-C0           1      3,264,087,132      instructions              #    0.91  insn per cycle         
+S0-C0           1        856,714,057      branches                  #   11.355 M/sec                  
+S0-C0           1         32,933,554      branch-misses             #    3.84% of all branches        
+S0-C1           1          75,451.48 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              7,970      context-switches          #    0.106 K/sec                  
+S0-C1           1                 18      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              4,092      page-faults               #    0.054 K/sec                  
+S0-C1           1      3,208,113,869      cycles                    #    0.043 GHz                    
+S0-C1           1      3,195,911,013      instructions              #    1.00  insn per cycle         
+S0-C1           1        846,791,525      branches                  #   11.223 M/sec                  
+S0-C1           1         30,448,731      branch-misses             #    3.60% of all branches        
+S0-C2           1          75,451.48 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,916      context-switches          #    0.052 K/sec                  
+S0-C2           1                 17      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              3,776      page-faults               #    0.050 K/sec                  
+S0-C2           1      3,534,961,855      cycles                    #    0.047 GHz                    
+S0-C2           1      3,161,989,049      instructions              #    0.89  insn per cycle         
+S0-C2           1        842,751,141      branches                  #   11.169 M/sec                  
+S0-C2           1         29,494,612      branch-misses             #    3.50% of all branches        
+S0-C3           1          75,451.48 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,431      context-switches          #    0.045 K/sec                  
+S0-C3           1                 21      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              3,867      page-faults               #    0.051 K/sec                  
+S0-C3           1      3,251,501,921      cycles                    #    0.043 GHz                    
+S0-C3           1      3,157,626,325      instructions              #    0.97  insn per cycle         
+S0-C3           1        841,891,399      branches                  #   11.158 M/sec                  
+S0-C3           1         29,560,073      branch-misses             #    3.51% of all branches        
+
+      75.452163176 seconds time elapsed
+
+================================================================================
+perf stat -o 102_swim.log --per-core -a taskset -c 0-3 ./spec95_102_swim.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:08:34 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          65,954.69 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             10,596      context-switches          #    0.161 K/sec                  
+S0-C0           1                 37      cpu-migrations            #    0.001 K/sec                  
+S0-C0           1              4,895      page-faults               #    0.074 K/sec                  
+S0-C0           1      4,129,759,732      cycles                    #    0.063 GHz                    
+S0-C0           1      1,862,459,855      instructions              #    0.45  insn per cycle         
+S0-C0           1        197,218,019      branches                  #    2.990 M/sec                  
+S0-C0           1          6,524,678      branch-misses             #    3.31% of all branches        
+S0-C1           1          65,954.70 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              3,301      context-switches          #    0.050 K/sec                  
+S0-C1           1                 25      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              4,058      page-faults               #    0.062 K/sec                  
+S0-C1           1      3,604,011,438      cycles                    #    0.055 GHz                    
+S0-C1           1      1,760,383,136      instructions              #    0.49  insn per cycle         
+S0-C1           1        182,276,200      branches                  #    2.764 M/sec                  
+S0-C1           1          3,297,939      branch-misses             #    1.81% of all branches        
+S0-C2           1          65,954.70 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,573      context-switches          #    0.054 K/sec                  
+S0-C2           1                 15      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              4,132      page-faults               #    0.063 K/sec                  
+S0-C2           1      4,082,322,694      cycles                    #    0.062 GHz                    
+S0-C2           1      1,766,602,389      instructions              #    0.43  insn per cycle         
+S0-C2           1        183,371,796      branches                  #    2.780 M/sec                  
+S0-C2           1          3,447,914      branch-misses             #    1.88% of all branches        
+S0-C3           1          65,954.70 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,238      context-switches          #    0.049 K/sec                  
+S0-C3           1                 21      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              3,859      page-faults               #    0.059 K/sec                  
+S0-C3           1      3,857,392,278      cycles                    #    0.058 GHz                    
+S0-C3           1      1,772,859,732      instructions              #    0.46  insn per cycle         
+S0-C3           1        182,680,316      branches                  #    2.770 M/sec                  
+S0-C3           1          3,305,680      branch-misses             #    1.81% of all branches        
+
+      65.955326002 seconds time elapsed
+
+================================================================================
+perf stat -o 103_su2cor.log --per-core -a taskset -c 0-3 ./spec95_103_su2cor.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:09:40 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1         114,197.65 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             16,969      context-switches          #    0.149 K/sec                  
+S0-C0           1                 12      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              6,372      page-faults               #    0.056 K/sec                  
+S0-C0           1      2,419,688,366      cycles                    #    0.021 GHz                    
+S0-C0           1      4,278,000,496      instructions              #    1.77  insn per cycle         
+S0-C0           1      1,204,468,900      branches                  #   10.547 M/sec                  
+S0-C0           1        109,677,191      branch-misses             #    9.11% of all branches        
+S0-C1           1         114,197.65 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              5,760      context-switches          #    0.050 K/sec                  
+S0-C1           1                  8      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              6,250      page-faults               #    0.055 K/sec                  
+S0-C1           1      2,260,796,552      cycles                    #    0.020 GHz                    
+S0-C1           1      4,174,125,475      instructions              #    1.85  insn per cycle         
+S0-C1           1      1,190,474,693      branches                  #   10.425 M/sec                  
+S0-C1           1        107,216,078      branch-misses             #    9.01% of all branches        
+S0-C2           1         114,197.64 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              6,970      context-switches          #    0.061 K/sec                  
+S0-C2           1                  5      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              6,110      page-faults               #    0.054 K/sec                  
+S0-C2           1      1,996,155,939      cycles                    #    0.017 GHz                    
+S0-C2           1      4,180,710,022      instructions              #    2.09  insn per cycle         
+S0-C2           1      1,191,843,456      branches                  #   10.437 M/sec                  
+S0-C2           1        106,872,130      branch-misses             #    8.97% of all branches        
+S0-C3           1         114,197.65 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,334      context-switches          #    0.038 K/sec                  
+S0-C3           1                 10      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              6,158      page-faults               #    0.054 K/sec                  
+S0-C3           1      1,759,151,537      cycles                    #    0.015 GHz                    
+S0-C3           1      4,166,622,655      instructions              #    2.37  insn per cycle         
+S0-C3           1      1,189,513,740      branches                  #   10.416 M/sec                  
+S0-C3           1        106,442,755      branch-misses             #    8.95% of all branches        
+
+     114.198539298 seconds time elapsed
+
+================================================================================
+perf stat -o 104_hydro2d.log --per-core -a taskset -c 0-3 ./spec95_104_hydro2d.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:11:35 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          93,394.94 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             18,078      context-switches          #    0.194 K/sec                  
+S0-C0           1                 33      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              2,610      page-faults               #    0.028 K/sec                  
+S0-C0           1      1,144,362,108      cycles                    #    0.012 GHz                    
+S0-C0           1      1,535,146,074      instructions              #    1.34  insn per cycle         
+S0-C0           1      2,628,464,921      branches                  #   28.144 M/sec                  
+S0-C0           1         23,753,703      branch-misses             #    0.90% of all branches        
+S0-C1           1          93,394.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,374      context-switches          #    0.047 K/sec                  
+S0-C1           1                 28      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              2,340      page-faults               #    0.025 K/sec                  
+S0-C1           1        178,792,620      cycles                    #    0.002 GHz                    
+S0-C1           1      1,383,870,080      instructions              #    7.74  insn per cycle         
+S0-C1           1      2,607,837,531      branches                  #   27.923 M/sec                  
+S0-C1           1         19,185,133      branch-misses             #    0.74% of all branches        
+S0-C2           1          93,394.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              5,565      context-switches          #    0.060 K/sec                  
+S0-C2           1                 19      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              2,490      page-faults               #    0.027 K/sec                  
+S0-C2           1        182,810,410      cycles                    #    0.002 GHz                    
+S0-C2           1      1,392,053,296      instructions              #    7.61  insn per cycle         
+S0-C2           1      2,609,289,785      branches                  #   27.938 M/sec                  
+S0-C2           1         19,435,408      branch-misses             #    0.74% of all branches        
+S0-C3           1          93,394.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              5,186      context-switches          #    0.056 K/sec                  
+S0-C3           1                 20      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              2,388      page-faults               #    0.026 K/sec                  
+S0-C3           1        180,382,454      cycles                    #    0.002 GHz                    
+S0-C3           1      1,388,588,411      instructions              #    7.70  insn per cycle         
+S0-C3           1      2,608,439,760      branches                  #   27.929 M/sec                  
+S0-C3           1         19,274,777      branch-misses             #    0.74% of all branches        
+
+      93.395693041 seconds time elapsed
+
+================================================================================
+perf stat -o 107_mgrid.log --per-core -a taskset -c 0-3 ./spec95_107_mgrid.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:13:08 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          88,823.03 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              8,789      context-switches          #    0.099 K/sec                  
+S0-C0           1                 25      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              2,049      page-faults               #    0.023 K/sec                  
+S0-C0           1      3,626,598,852      cycles                    #    0.041 GHz                    
+S0-C0           1        183,302,859      instructions              #    0.05  insn per cycle         
+S0-C0           1        715,711,262      branches                  #    8.058 M/sec                  
+S0-C0           1         35,768,367      branch-misses             #    5.00% of all branches        
+S0-C1           1          88,823.03 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              3,735      context-switches          #    0.042 K/sec                  
+S0-C1           1                 18      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              2,038      page-faults               #    0.023 K/sec                  
+S0-C1           1      3,463,815,530      cycles                    #    0.039 GHz                    
+S0-C1           1        135,973,797      instructions              #    0.04  insn per cycle         
+S0-C1           1        708,966,471      branches                  #    7.982 M/sec                  
+S0-C1           1         34,110,556      branch-misses             #    4.81% of all branches        
+S0-C2           1          88,823.03 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              9,029      context-switches          #    0.102 K/sec                  
+S0-C2           1                  4      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              2,257      page-faults               #    0.025 K/sec                  
+S0-C2           1      3,792,896,714      cycles                    #    0.043 GHz                    
+S0-C2           1        180,968,644      instructions              #    0.05  insn per cycle         
+S0-C2           1        715,106,140      branches                  #    8.051 M/sec                  
+S0-C2           1         35,326,642      branch-misses             #    4.94% of all branches        
+S0-C3           1          88,823.03 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,929      context-switches          #    0.055 K/sec                  
+S0-C3           1                 13      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              2,312      page-faults               #    0.026 K/sec                  
+S0-C3           1      3,467,307,381      cycles                    #    0.039 GHz                    
+S0-C3           1        143,653,296      instructions              #    0.04  insn per cycle         
+S0-C3           1        709,958,260      branches                  #    7.993 M/sec                  
+S0-C3           1         34,404,498      branch-misses             #    4.85% of all branches        
+
+      88.823805224 seconds time elapsed
+
+================================================================================
+perf stat -o 110_applu.log --per-core -a taskset -c 0-3 ./spec95_110_applu.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:14:37 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          80,203.13 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             11,831      context-switches          #    0.148 K/sec                  
+S0-C0           1                 10      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              7,805      page-faults               #    0.097 K/sec                  
+S0-C0           1      1,175,032,302      cycles                    #    0.015 GHz                    
+S0-C0           1        450,832,563      instructions              #    0.38  insn per cycle         
+S0-C0           1        352,841,986      branches                  #    4.399 M/sec                  
+S0-C0           1         19,894,808      branch-misses             #    5.64% of all branches        
+S0-C1           1          80,203.13 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              3,437      context-switches          #    0.043 K/sec                  
+S0-C1           1                  7      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              7,592      page-faults               #    0.095 K/sec                  
+S0-C1           1      1,141,197,410      cycles                    #    0.014 GHz                    
+S0-C1           1        374,445,818      instructions              #    0.33  insn per cycle         
+S0-C1           1        342,600,119      branches                  #    4.272 M/sec                  
+S0-C1           1         17,547,793      branch-misses             #    5.12% of all branches        
+S0-C2           1          80,203.14 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              4,162      context-switches          #    0.052 K/sec                  
+S0-C2           1                  3      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              7,688      page-faults               #    0.096 K/sec                  
+S0-C2           1      1,155,081,624      cycles                    #    0.014 GHz                    
+S0-C2           1        380,271,428      instructions              #    0.33  insn per cycle         
+S0-C2           1        343,696,182      branches                  #    4.285 M/sec                  
+S0-C2           1         17,699,715      branch-misses             #    5.15% of all branches        
+S0-C3           1          80,203.14 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,095      context-switches          #    0.051 K/sec                  
+S0-C3           1                  8      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              7,544      page-faults               #    0.094 K/sec                  
+S0-C3           1      1,154,971,030      cycles                    #    0.014 GHz                    
+S0-C3           1        377,018,991      instructions              #    0.33  insn per cycle         
+S0-C3           1        342,961,663      branches                  #    4.276 M/sec                  
+S0-C3           1         17,642,991      branch-misses             #    5.14% of all branches        
+
+      80.203832136 seconds time elapsed
+
+================================================================================
+perf stat -o 125_turb3d.log --per-core -a taskset -c 0-3 ./spec95_125_turb3d.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:15:57 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          94,409.37 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             13,289      context-switches          #    0.141 K/sec                  
+S0-C0           1                 28      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              6,531      page-faults               #    0.069 K/sec                  
+S0-C0           1      2,451,430,694      cycles                    #    0.026 GHz                    
+S0-C0           1      1,890,729,197      instructions              #    0.77  insn per cycle         
+S0-C0           1      3,575,523,288      branches                  #   37.873 M/sec                  
+S0-C0           1        292,155,178      branch-misses             #    8.17% of all branches        
+S0-C1           1          94,409.37 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1             10,852      context-switches          #    0.115 K/sec                  
+S0-C1           1                 35      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              6,791      page-faults               #    0.072 K/sec                  
+S0-C1           1      1,914,348,795      cycles                    #    0.020 GHz                    
+S0-C1           1      1,847,905,205      instructions              #    0.97  insn per cycle         
+S0-C1           1      3,569,089,228      branches                  #   37.804 M/sec                  
+S0-C1           1        291,303,841      branch-misses             #    8.16% of all branches        
+S0-C2           1          94,409.37 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              5,399      context-switches          #    0.057 K/sec                  
+S0-C2           1                 15      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              6,959      page-faults               #    0.074 K/sec                  
+S0-C2           1      2,118,894,309      cycles                    #    0.022 GHz                    
+S0-C2           1      1,813,874,295      instructions              #    0.86  insn per cycle         
+S0-C2           1      3,565,184,862      branches                  #   37.763 M/sec                  
+S0-C2           1        290,009,624      branch-misses             #    8.13% of all branches        
+S0-C3           1          94,409.37 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,983      context-switches          #    0.053 K/sec                  
+S0-C3           1                 48      cpu-migrations            #    0.001 K/sec                  
+S0-C3           1              6,723      page-faults               #    0.071 K/sec                  
+S0-C3           1      1,390,892,423      cycles                    #    0.015 GHz                    
+S0-C3           1      1,802,717,235      instructions              #    1.30  insn per cycle         
+S0-C3           1      3,563,345,800      branches                  #   37.744 M/sec                  
+S0-C3           1        289,867,126      branch-misses             #    8.13% of all branches        
+
+      94.410274050 seconds time elapsed
+
+================================================================================
+perf stat -o 126_gcc.log --per-core -a taskset -c 0-3 ./spec95_126_gcc.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:17:32 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1           6,608.07 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              5,225      context-switches          #    0.791 K/sec                  
+S0-C0           1                 22      cpu-migrations            #    0.003 K/sec                  
+S0-C0           1              4,620      page-faults               #    0.699 K/sec                  
+S0-C0           1      4,216,965,787      cycles                    #    0.638 GHz                    
+S0-C0           1      3,377,029,921      instructions              #    0.80  insn per cycle         
+S0-C0           1        462,748,628      branches                  #   70.028 M/sec                  
+S0-C0           1        118,472,584      branch-misses             #   25.60% of all branches        
+S0-C1           1           6,608.07 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,218      context-switches          #    0.638 K/sec                  
+S0-C1           1                 22      cpu-migrations            #    0.003 K/sec                  
+S0-C1           1              3,977      page-faults               #    0.602 K/sec                  
+S0-C1           1      3,902,652,514      cycles                    #    0.591 GHz                    
+S0-C1           1      3,336,527,234      instructions              #    0.85  insn per cycle         
+S0-C1           1        457,350,490      branches                  #   69.211 M/sec                  
+S0-C1           1        117,181,148      branch-misses             #   25.62% of all branches        
+S0-C2           1           6,608.07 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1                544      context-switches          #    0.082 K/sec                  
+S0-C2           1                 19      cpu-migrations            #    0.003 K/sec                  
+S0-C2           1              4,812      page-faults               #    0.728 K/sec                  
+S0-C2           1      4,023,339,774      cycles                    #    0.609 GHz                    
+S0-C2           1      3,333,476,876      instructions              #    0.83  insn per cycle         
+S0-C2           1        456,698,507      branches                  #   69.112 M/sec                  
+S0-C2           1        117,076,673      branch-misses             #   25.64% of all branches        
+S0-C3           1           6,608.07 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              1,520      context-switches          #    0.230 K/sec                  
+S0-C3           1                 13      cpu-migrations            #    0.002 K/sec                  
+S0-C3           1              4,493      page-faults               #    0.680 K/sec                  
+S0-C3           1      3,928,998,379      cycles                    #    0.595 GHz                    
+S0-C3           1      3,340,199,845      instructions              #    0.85  insn per cycle         
+S0-C3           1        457,418,094      branches                  #   69.221 M/sec                  
+S0-C3           1        117,171,413      branch-misses             #   25.62% of all branches        
+
+       6.608420324 seconds time elapsed
+
+================================================================================
+perf stat -o 129_compress.log --per-core -a taskset -c 0-3 ./spec95_129_compress.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:17:38 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1         173,396.16 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             15,941      context-switches          #    0.092 K/sec                  
+S0-C0           1                 16      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              9,161      page-faults               #    0.053 K/sec                  
+S0-C0           1      1,243,941,151      cycles                    #    0.007 GHz                    
+S0-C0           1      1,243,444,214      instructions              #    1.00  insn per cycle         
+S0-C0           1      3,668,299,615      branches                  #   21.156 M/sec                  
+S0-C0           1        615,205,581      branch-misses             #   16.77% of all branches        
+S0-C1           1         173,396.16 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1             19,492      context-switches          #    0.112 K/sec                  
+S0-C1           1                 17      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              9,370      page-faults               #    0.054 K/sec                  
+S0-C1           1        509,243,383      cycles                    #    0.003 GHz                    
+S0-C1           1      1,244,005,372      instructions              #    2.44  insn per cycle         
+S0-C1           1      3,667,521,321      branches                  #   21.151 M/sec                  
+S0-C1           1        614,815,145      branch-misses             #   16.76% of all branches        
+S0-C2           1         173,396.17 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              8,228      context-switches          #    0.047 K/sec                  
+S0-C2           1                  9      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              9,199      page-faults               #    0.053 K/sec                  
+S0-C2           1      2,058,191,778      cycles                    #    0.012 GHz                    
+S0-C2           1      1,166,586,413      instructions              #    0.57  insn per cycle         
+S0-C2           1      3,658,216,015      branches                  #   21.097 M/sec                  
+S0-C2           1        612,453,001      branch-misses             #   16.74% of all branches        
+S0-C3           1         173,396.17 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              8,238      context-switches          #    0.048 K/sec                  
+S0-C3           1                 15      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              9,155      page-faults               #    0.053 K/sec                  
+S0-C3           1      4,294,205,316      cycles                    #    0.025 GHz                    
+S0-C3           1      1,157,692,483      instructions              #    0.27  insn per cycle         
+S0-C3           1      3,656,472,972      branches                  #   21.087 M/sec                  
+S0-C3           1        612,356,595      branch-misses             #   16.75% of all branches        
+
+     173.397834662 seconds time elapsed
+
+================================================================================
+perf stat -o 130_li.log --per-core -a taskset -c 0-3 ./spec95_130_li.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:20:32 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          77,766.50 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              7,172      context-switches          #    0.092 K/sec                  
+S0-C0           1                 26      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1                595      page-faults               #    0.008 K/sec                  
+S0-C0           1      2,305,146,057      cycles                    #    0.030 GHz                    
+S0-C0           1        993,630,419      instructions              #    0.43  insn per cycle         
+S0-C0           1      1,823,466,232      branches                  #   23.448 M/sec                  
+S0-C0           1      1,040,234,925      branch-misses             #   57.05% of all branches        
+S0-C1           1          77,766.50 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,932      context-switches          #    0.038 K/sec                  
+S0-C1           1                 21      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1                298      page-faults               #    0.004 K/sec                  
+S0-C1           1      1,872,386,408      cycles                    #    0.024 GHz                    
+S0-C1           1        948,024,500      instructions              #    0.51  insn per cycle         
+S0-C1           1      1,817,185,698      branches                  #   23.367 M/sec                  
+S0-C1           1      1,038,658,218      branch-misses             #   57.16% of all branches        
+S0-C2           1          77,766.50 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,914      context-switches          #    0.050 K/sec                  
+S0-C2           1                 24      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1                438      page-faults               #    0.006 K/sec                  
+S0-C2           1      1,872,967,503      cycles                    #    0.024 GHz                    
+S0-C2           1        955,362,936      instructions              #    0.51  insn per cycle         
+S0-C2           1      1,818,452,926      branches                  #   23.383 M/sec                  
+S0-C2           1      1,038,542,425      branch-misses             #   57.11% of all branches        
+S0-C3           1          77,766.50 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              9,957      context-switches          #    0.128 K/sec                  
+S0-C3           1                 17      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1                290      page-faults               #    0.004 K/sec                  
+S0-C3           1      2,236,684,032      cycles                    #    0.029 GHz                    
+S0-C3           1        992,614,293      instructions              #    0.44  insn per cycle         
+S0-C3           1      1,823,005,634      branches                  #   23.442 M/sec                  
+S0-C3           1      1,040,383,824      branch-misses             #   57.07% of all branches        
+
+      77.767363181 seconds time elapsed
+
+================================================================================
+perf stat -o 132_ijpeg.log --per-core -a taskset -c 0-3 ./spec95_132_ijpeg.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:21:50 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          22,174.83 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              3,125      context-switches          #    0.141 K/sec                  
+S0-C0           1                 11      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1              2,936      page-faults               #    0.132 K/sec                  
+S0-C0           1      2,940,981,243      cycles                    #    0.133 GHz                    
+S0-C0           1        261,766,393      instructions              #    0.09  insn per cycle         
+S0-C0           1      1,118,348,470      branches                  #   50.433 M/sec                  
+S0-C0           1        202,495,581      branch-misses             #   18.11% of all branches        
+S0-C1           1          22,174.83 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              1,290      context-switches          #    0.058 K/sec                  
+S0-C1           1                 19      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1              2,424      page-faults               #    0.109 K/sec                  
+S0-C1           1      3,553,814,064      cycles                    #    0.160 GHz                    
+S0-C1           1      1,821,040,933      instructions              #    0.51  insn per cycle         
+S0-C1           1        965,114,912      branches                  #   43.523 M/sec                  
+S0-C1           1        164,661,278      branch-misses             #   17.06% of all branches        
+S0-C2           1          22,174.83 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              1,206      context-switches          #    0.054 K/sec                  
+S0-C2           1                  6      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1              2,794      page-faults               #    0.126 K/sec                  
+S0-C2           1      2,943,359,449      cycles                    #    0.133 GHz                    
+S0-C2           1        240,963,005      instructions              #    0.08  insn per cycle         
+S0-C2           1      1,115,660,058      branches                  #   50.312 M/sec                  
+S0-C2           1        201,526,653      branch-misses             #   18.06% of all branches        
+S0-C3           1          22,174.83 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              1,833      context-switches          #    0.083 K/sec                  
+S0-C3           1                  8      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              2,564      page-faults               #    0.116 K/sec                  
+S0-C3           1      1,688,177,183      cycles                    #    0.076 GHz                    
+S0-C3           1      3,712,027,168      instructions              #    2.20  insn per cycle         
+S0-C3           1      1,065,557,256      branches                  #   48.053 M/sec                  
+S0-C3           1        187,639,565      branch-misses             #   17.61% of all branches        
+
+      22.175294354 seconds time elapsed
+
+================================================================================
+perf stat -o 134_perl.log --per-core -a taskset -c 0-3 ./spec95_134_perl.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:22:12 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          30,553.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             17,748      context-switches          #    0.581 K/sec                  
+S0-C0           1                 27      cpu-migrations            #    0.001 K/sec                  
+S0-C0           1              9,299      page-faults               #    0.304 K/sec                  
+S0-C0           1      1,012,817,696      cycles                    #    0.033 GHz                    
+S0-C0           1        925,951,011      instructions              #    0.91  insn per cycle         
+S0-C0           1      2,743,494,507      branches                  #   89.792 M/sec                  
+S0-C0           1        495,453,879      branch-misses             #   18.06% of all branches        
+S0-C1           1          30,553.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              1,952      context-switches          #    0.064 K/sec                  
+S0-C1           1                 18      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1              9,159      page-faults               #    0.300 K/sec                  
+S0-C1           1        331,637,547      cycles                    #    0.011 GHz                    
+S0-C1           1        791,492,052      instructions              #    2.39  insn per cycle         
+S0-C1           1      2,725,012,773      branches                  #   89.187 M/sec                  
+S0-C1           1        477,165,358      branch-misses             #   17.51% of all branches        
+S0-C2           1          30,553.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,584      context-switches          #    0.117 K/sec                  
+S0-C2           1                 16      cpu-migrations            #    0.001 K/sec                  
+S0-C2           1              9,149      page-faults               #    0.299 K/sec                  
+S0-C2           1        530,331,518      cycles                    #    0.017 GHz                    
+S0-C2           1        803,190,514      instructions              #    1.51  insn per cycle         
+S0-C2           1      2,726,627,451      branches                  #   89.240 M/sec                  
+S0-C2           1        477,539,832      branch-misses             #   17.51% of all branches        
+S0-C3           1          30,553.95 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              1,134      context-switches          #    0.037 K/sec                  
+S0-C3           1                 10      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              9,451      page-faults               #    0.309 K/sec                  
+S0-C3           1      1,055,234,009      cycles                    #    0.035 GHz                    
+S0-C3           1        790,294,490      instructions              #    0.75  insn per cycle         
+S0-C3           1      2,724,815,426      branches                  #   89.180 M/sec                  
+S0-C3           1        491,200,174      branch-misses             #   18.03% of all branches        
+
+      30.554463911 seconds time elapsed
+
+================================================================================
+perf stat -o 141_apsi.log --per-core -a taskset -c 0-3 ./spec95_141_apsi.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:22:42 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          67,140.35 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              7,240      context-switches          #    0.108 K/sec                  
+S0-C0           1                 35      cpu-migrations            #    0.001 K/sec                  
+S0-C0           1                918      page-faults               #    0.014 K/sec                  
+S0-C0           1      1,278,614,659      cycles                    #    0.019 GHz                    
+S0-C0           1      2,086,505,070      instructions              #    1.63  insn per cycle         
+S0-C0           1        870,867,812      branches                  #   12.971 M/sec                  
+S0-C0           1         40,314,791      branch-misses             #    4.63% of all branches        
+S0-C1           1          67,140.35 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,669      context-switches          #    0.070 K/sec                  
+S0-C1           1                 16      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1              1,175      page-faults               #    0.018 K/sec                  
+S0-C1           1      1,376,190,781      cycles                    #    0.020 GHz                    
+S0-C1           1      2,072,078,992      instructions              #    1.51  insn per cycle         
+S0-C1           1        868,502,684      branches                  #   12.936 M/sec                  
+S0-C1           1         39,350,061      branch-misses             #    4.53% of all branches        
+S0-C2           1          67,140.35 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              4,071      context-switches          #    0.061 K/sec                  
+S0-C2           1                 33      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1                966      page-faults               #    0.014 K/sec                  
+S0-C2           1        787,370,799      cycles                    #    0.012 GHz                    
+S0-C2           1      2,056,645,099      instructions              #    2.61  insn per cycle         
+S0-C2           1        866,945,203      branches                  #   12.912 M/sec                  
+S0-C2           1         38,933,188      branch-misses             #    4.49% of all branches        
+S0-C3           1          67,140.35 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              3,731      context-switches          #    0.056 K/sec                  
+S0-C3           1                 25      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1              1,060      page-faults               #    0.016 K/sec                  
+S0-C3           1      1,346,392,931      cycles                    #    0.020 GHz                    
+S0-C3           1      2,052,579,617      instructions              #    1.52  insn per cycle         
+S0-C3           1        866,109,939      branches                  #   12.900 M/sec                  
+S0-C3           1         38,937,343      branch-misses             #    4.50% of all branches        
+
+      67.141104235 seconds time elapsed
+
+================================================================================
+perf stat -o 145_fpppp.log --per-core -a taskset -c 0-3 ./spec95_145_fpppp.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:23:50 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1         136,460.94 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             19,736      context-switches          #    0.145 K/sec                  
+S0-C0           1                 11      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1                226      page-faults               #    0.002 K/sec                  
+S0-C0           1      1,285,745,578      cycles                    #    0.009 GHz                    
+S0-C0           1      3,741,984,558      instructions              #    2.91  insn per cycle         
+S0-C0           1      1,272,336,986      branches                  #    9.324 M/sec                  
+S0-C0           1        123,381,177      branch-misses             #    9.70% of all branches        
+S0-C1           1         136,460.94 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,179      context-switches          #    0.031 K/sec                  
+S0-C1           1                 11      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1                279      page-faults               #    0.002 K/sec                  
+S0-C1           1      3,801,074,125      cycles                    #    0.028 GHz                    
+S0-C1           1      3,616,976,826      instructions              #    0.95  insn per cycle         
+S0-C1           1      1,255,674,746      branches                  #    9.202 M/sec                  
+S0-C1           1        118,516,965      branch-misses             #    9.44% of all branches        
+S0-C2           1         136,460.94 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              9,173      context-switches          #    0.067 K/sec                  
+S0-C2           1                  7      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1                373      page-faults               #    0.003 K/sec                  
+S0-C2           1        465,039,474      cycles                    #    0.003 GHz                    
+S0-C2           1      3,643,216,217      instructions              #    7.83  insn per cycle         
+S0-C2           1      1,259,642,792      branches                  #    9.231 M/sec                  
+S0-C2           1        119,737,443      branch-misses             #    9.51% of all branches        
+S0-C3           1         136,460.94 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              7,771      context-switches          #    0.057 K/sec                  
+S0-C3           1                  7      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1                495      page-faults               #    0.004 K/sec                  
+S0-C3           1      4,104,193,397      cycles                    #    0.030 GHz                    
+S0-C3           1      3,632,949,623      instructions              #    0.89  insn per cycle         
+S0-C3           1      1,257,821,100      branches                  #    9.217 M/sec                  
+S0-C3           1        119,415,856      branch-misses             #    9.49% of all branches        
+
+     136.462122614 seconds time elapsed
+
+================================================================================
+perf stat -o 146_wave5.log --per-core -a taskset -c 0-3 ./spec95_146_wave5.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:26:06 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          65,777.67 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              5,871      context-switches          #    0.089 K/sec                  
+S0-C0           1                 23      cpu-migrations            #    0.000 K/sec                  
+S0-C0           1             10,673      page-faults               #    0.162 K/sec                  
+S0-C0           1      2,841,604,876      cycles                    #    0.043 GHz                    
+S0-C0           1      2,545,539,265      instructions              #    0.90  insn per cycle         
+S0-C0           1      1,324,749,432      branches                  #   20.140 M/sec                  
+S0-C0           1         16,421,503      branch-misses             #    1.24% of all branches        
+S0-C1           1          65,777.67 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              2,739      context-switches          #    0.042 K/sec                  
+S0-C1           1                 16      cpu-migrations            #    0.000 K/sec                  
+S0-C1           1             10,476      page-faults               #    0.159 K/sec                  
+S0-C1           1      3,305,616,466      cycles                    #    0.050 GHz                    
+S0-C1           1      2,509,045,772      instructions              #    0.76  insn per cycle         
+S0-C1           1      1,319,714,566      branches                  #   20.063 M/sec                  
+S0-C1           1         15,197,652      branch-misses             #    1.15% of all branches        
+S0-C2           1          65,777.67 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              3,463      context-switches          #    0.053 K/sec                  
+S0-C2           1                 17      cpu-migrations            #    0.000 K/sec                  
+S0-C2           1             10,576      page-faults               #    0.161 K/sec                  
+S0-C2           1      2,977,377,313      cycles                    #    0.045 GHz                    
+S0-C2           1      2,512,840,211      instructions              #    0.84  insn per cycle         
+S0-C2           1      1,320,446,801      branches                  #   20.074 M/sec                  
+S0-C2           1         15,236,666      branch-misses             #    1.15% of all branches        
+S0-C3           1          65,777.67 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              7,355      context-switches          #    0.112 K/sec                  
+S0-C3           1                  9      cpu-migrations            #    0.000 K/sec                  
+S0-C3           1             10,667      page-faults               #    0.162 K/sec                  
+S0-C3           1      3,864,567,908      cycles                    #    0.059 GHz                    
+S0-C3           1      2,542,920,825      instructions              #    0.66  insn per cycle         
+S0-C3           1      1,324,075,957      branches                  #   20.130 M/sec                  
+S0-C3           1         16,785,195      branch-misses             #    1.27% of all branches        
+
+      65.778377081 seconds time elapsed
+
+================================================================================
+perf stat -o 147_vortex.log --per-core -a taskset -c 0-3 ./spec95_147_vortex.sh -n 4
+/home/mendel/sd_card/i-benchmarks/spec_95/bin
+# started on Wed Mar  3 10:27:12 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          94,664.18 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             26,915      context-switches          #    0.284 K/sec                  
+S0-C0           1                103      cpu-migrations            #    0.001 K/sec                  
+S0-C0           1             12,008      page-faults               #    0.127 K/sec                  
+S0-C0           1      2,534,414,327      cycles                    #    0.027 GHz                    
+S0-C0           1      3,611,849,797      instructions              #    1.43  insn per cycle         
+S0-C0           1      1,565,739,582      branches                  #   16.540 M/sec                  
+S0-C0           1        391,970,383      branch-misses             #   25.03% of all branches        
+S0-C1           1          94,664.18 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              4,576      context-switches          #    0.048 K/sec                  
+S0-C1           1                 61      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1             11,884      page-faults               #    0.126 K/sec                  
+S0-C1           1      1,116,970,861      cycles                    #    0.012 GHz                    
+S0-C1           1      3,407,706,925      instructions              #    3.05  insn per cycle         
+S0-C1           1      1,538,096,145      branches                  #   16.248 M/sec                  
+S0-C1           1        388,363,832      branch-misses             #   25.25% of all branches        
+S0-C2           1          94,664.18 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              5,399      context-switches          #    0.057 K/sec                  
+S0-C2           1                 63      cpu-migrations            #    0.001 K/sec                  
+S0-C2           1             11,854      page-faults               #    0.125 K/sec                  
+S0-C2           1      4,139,097,994      cycles                    #    0.044 GHz                    
+S0-C2           1      3,413,216,224      instructions              #    0.82  insn per cycle         
+S0-C2           1      1,539,111,393      branches                  #   16.259 M/sec                  
+S0-C2           1        384,537,024      branch-misses             #   24.98% of all branches        
+S0-C3           1          94,664.18 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              4,517      context-switches          #    0.048 K/sec                  
+S0-C3           1                 64      cpu-migrations            #    0.001 K/sec                  
+S0-C3           1             12,138      page-faults               #    0.128 K/sec                  
+S0-C3           1      4,057,963,242      cycles                    #    0.043 GHz                    
+S0-C3           1      3,409,446,078      instructions              #    0.84  insn per cycle         
+S0-C3           1      1,538,120,234      branches                  #   16.248 M/sec                  
+S0-C3           1        384,258,493      branch-misses             #   24.98% of all branches        
+
+      94.665046096 seconds time elapsed
+
+================================================================================
+perf stat -o aes_benchmark.log --per-core -a taskset -c 0-3 ./aes_benchmark 4
+SUCCESS::pthread_create() succeeded
+SUCCESS::pthread_create() succeeded
+SUCCESS::pthread_create() succeeded
+SUCCESS::pthread_create() succeeded
+AES Tests: SUCCEEDED
+AES Tests: SUCCEEDED
+AES Tests: SUCCEEDED
+AES Tests: SUCCEEDED
+# started on Wed Mar  3 10:28:47 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1           6,534.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1                708      context-switches          #    0.108 K/sec                  
+S0-C0           1                 14      cpu-migrations            #    0.002 K/sec                  
+S0-C0           1                439      page-faults               #    0.067 K/sec                  
+S0-C0           1      4,097,046,253      cycles                    #    0.627 GHz                    
+S0-C0           1      3,437,339,302      instructions              #    0.84  insn per cycle         
+S0-C0           1        178,181,206      branches                  #   27.269 M/sec                  
+S0-C0           1          2,965,204      branch-misses             #    1.66% of all branches        
+S0-C1           1           6,534.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1                372      context-switches          #    0.057 K/sec                  
+S0-C1           1                  7      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1                446      page-faults               #    0.068 K/sec                  
+S0-C1           1      4,081,026,860      cycles                    #    0.625 GHz                    
+S0-C1           1      3,434,062,095      instructions              #    0.84  insn per cycle         
+S0-C1           1        177,718,101      branches                  #   27.198 M/sec                  
+S0-C1           1          2,826,049      branch-misses             #    1.59% of all branches        
+S0-C2           1           6,534.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1                818      context-switches          #    0.125 K/sec                  
+S0-C2           1                  6      cpu-migrations            #    0.001 K/sec                  
+S0-C2           1                390      page-faults               #    0.060 K/sec                  
+S0-C2           1      4,092,686,331      cycles                    #    0.626 GHz                    
+S0-C2           1      3,437,685,255      instructions              #    0.84  insn per cycle         
+S0-C2           1        178,198,361      branches                  #   27.272 M/sec                  
+S0-C2           1          2,924,406      branch-misses             #    1.64% of all branches        
+S0-C3           1           6,534.22 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1                390      context-switches          #    0.060 K/sec                  
+S0-C3           1                  7      cpu-migrations            #    0.001 K/sec                  
+S0-C3           1                388      page-faults               #    0.059 K/sec                  
+S0-C3           1      4,082,268,107      cycles                    #    0.625 GHz                    
+S0-C3           1      3,433,876,119      instructions              #    0.84  insn per cycle         
+S0-C3           1        177,680,654      branches                  #   27.192 M/sec                  
+S0-C3           1          2,829,298      branch-misses             #    1.59% of all branches        
+
+       6.534555647 seconds time elapsed
+
+================================================================================
+This benchmark has been compiled to use 16 threads. You have to repcompile it if you want to use different number of threads. See ../install/setup.sh for details.
+================================================================================
+================================================================================
+Printing results
+File: sqlite_4_threads.txt
+instructions: 2442135857
+=(619205752+605201325+602331858+615396922)
+frequencies: 0.196
+=(0.206+0.188+0.189+0.199)/4
+ipcs:0.40
+=1*(0.38+0.41+0.41+0.39)/4
+
+File: word2vec_perf_output_no_branch_1614765593368128058.txt
+instructions: 7514053730
+=(679991479+1892863529+2504399088+2436799634)
+frequencies: 0.021
+=(0.024+0.019+0.001+0.042)/4
+ipcs:7.86
+=1*(0.29+1.01+29.52+0.60)/4
+
+File: word2vec_perf_output_1614765593363779956.txt
+instructions: 10282125553
+=(2087511058+2084828370+2098584751+4011201374)
+frequencies: 0.021
+=(0.021+0.019+0.021+0.021)/4
+ipcs:1.37
+=1*(1.08+1.21+1.07+2.13)/4
+
+File: go_word2vec_4_threads.txt
+instructions: 11976662508
+=(3060877388+2784107341+2972018105+3159659674)
+frequencies: 0.064
+=(0.045+0.087+0.081+0.043)/4
+ipcs:1.43
+=1*(1.84+0.87+1.00+2.01)/4
+
+================================================================================
+Finished running benchmarks
+================================================================================
