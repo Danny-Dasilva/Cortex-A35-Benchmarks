@@ -1,0 +1,665 @@
+Architecture:        aarch64
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+Vendor ID:           ARM
+Model:               1
+Model name:          Cortex-A35
+Stepping:            r0p1
+CPU max MHz:         1300.0000
+CPU min MHz:         598.0000
+BogoMIPS:            26.00
+Flags:               fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+MemTotal:        2044996 kB
+perf stat -o libquantum_groover.log --per-core -a taskset -c 0-3 ./groover_benchmark.sh -n 4
+Iterating 100 times
+Iteration #1
+Iterating 100 times
+Iteration #1
+Iterating 100 times
+Iteration #1
+Iterating 100 times
+Iteration #1
+Iteration #2
+Iteration #2
+Iteration #2
+Iteration #2
+Iteration #3
+Iteration #3
+Iteration #3
+Iteration #3
+Iteration #4
+Iteration #4
+Iteration #4
+Iteration #4
+Iteration #5
+Iteration #5
+Iteration #5
+Iteration #5
+Iteration #6
+Iteration #6
+Iteration #6
+Iteration #6
+Iteration #7
+Iteration #7
+Iteration #7
+Iteration #7
+Iteration #8
+Iteration #8
+Iteration #8
+Iteration #8
+Iteration #9
+Iteration #9
+Iteration #9
+Iteration #9
+Iteration #10
+Iteration #10
+Iteration #10
+Iteration #10
+Iteration #11
+Iteration #11
+Iteration #11
+Iteration #11
+Iteration #12
+Iteration #12
+Iteration #12
+Iteration #12
+Iteration #13
+Iteration #13
+Iteration #13
+Iteration #13
+Iteration #14
+Iteration #14
+Iteration #14
+Iteration #14
+Iteration #15
+Iteration #15
+Iteration #15
+Iteration #15
+Iteration #16
+Iteration #16
+Iteration #16
+Iteration #16
+Iteration #17
+Iteration #17
+Iteration #17
+Iteration #17
+Iteration #18
+Iteration #18
+Iteration #18
+Iteration #18
+Iteration #19
+Iteration #19
+Iteration #19
+Iteration #19
+Iteration #20
+Iteration #20
+Iteration #20
+Iteration #20
+Iteration #21
+Iteration #21
+Iteration #21
+Iteration #21
+Iteration #22
+Iteration #22
+Iteration #22
+Iteration #22
+Iteration #23
+Iteration #23
+Iteration #23
+Iteration #23
+Iteration #24
+Iteration #24
+Iteration #24
+Iteration #24
+Iteration #25
+Iteration #25
+Iteration #25
+Iteration #25
+Iteration #26
+Iteration #26
+Iteration #26
+Iteration #26
+Iteration #27
+Iteration #27
+Iteration #27
+Iteration #27
+Iteration #28
+Iteration #28
+Iteration #28
+Iteration #28
+Iteration #29
+Iteration #29
+Iteration #29
+Iteration #29
+Iteration #30
+Iteration #30
+Iteration #30
+Iteration #30
+Iteration #31
+Iteration #31
+Iteration #31
+Iteration #31
+Iteration #32
+Iteration #32
+Iteration #32
+Iteration #32
+Iteration #33
+Iteration #33
+Iteration #33
+Iteration #33
+Iteration #34
+Iteration #34
+Iteration #34
+Iteration #34
+Iteration #35
+Iteration #35
+Iteration #35
+Iteration #35
+Iteration #36
+Iteration #36
+Iteration #36
+Iteration #36
+Iteration #37
+Iteration #37
+Iteration #37
+Iteration #37
+Iteration #38
+Iteration #38
+Iteration #38
+Iteration #38
+Iteration #39
+Iteration #39
+Iteration #39
+Iteration #39
+Iteration #40
+Iteration #40
+Iteration #40
+Iteration #40
+Iteration #41
+Iteration #41
+Iteration #41
+Iteration #41
+Iteration #42
+Iteration #42
+Iteration #42
+Iteration #42
+Iteration #43
+Iteration #43
+Iteration #43
+Iteration #43
+Iteration #44
+Iteration #44
+Iteration #44
+Iteration #44
+Iteration #45
+Iteration #45
+Iteration #45
+Iteration #45
+Iteration #46
+Iteration #46
+Iteration #46
+Iteration #46
+Iteration #47
+Iteration #47
+Iteration #47
+Iteration #47
+Iteration #48
+Iteration #48
+Iteration #48
+Iteration #48
+Iteration #49
+Iteration #49
+Iteration #49
+Iteration #49
+Iteration #50
+Iteration #50
+Iteration #50
+Iteration #50
+Iteration #51
+Iteration #51
+Iteration #51
+Iteration #51
+Iteration #52
+Iteration #52
+Iteration #52
+Iteration #52
+Iteration #53
+Iteration #53
+Iteration #53
+Iteration #53
+Iteration #54
+Iteration #54
+Iteration #54
+Iteration #54
+Iteration #55
+Iteration #55
+Iteration #55
+Iteration #55
+Iteration #56
+Iteration #56
+Iteration #56
+Iteration #56
+Iteration #57
+Iteration #57
+Iteration #57
+Iteration #57
+Iteration #58
+Iteration #58
+Iteration #58
+Iteration #58
+Iteration #59
+Iteration #59
+Iteration #59
+Iteration #59
+Iteration #60
+Iteration #60
+Iteration #60
+Iteration #60
+Iteration #61
+Iteration #61
+Iteration #61
+Iteration #61
+Iteration #62
+Iteration #62
+Iteration #62
+Iteration #62
+Iteration #63
+Iteration #63
+Iteration #63
+Iteration #63
+Iteration #64
+Iteration #64
+Iteration #64
+Iteration #64
+Iteration #65
+Iteration #65
+Iteration #65
+Iteration #65
+Iteration #66
+Iteration #66
+Iteration #66
+Iteration #66
+Iteration #67
+Iteration #67
+Iteration #67
+Iteration #67
+Iteration #68
+Iteration #68
+Iteration #68
+Iteration #68
+Iteration #69
+Iteration #69
+Iteration #69
+Iteration #69
+Iteration #70
+Iteration #70
+Iteration #70
+Iteration #71
+Iteration #70
+Iteration #71
+Iteration #71
+Iteration #72
+Iteration #71
+Iteration #72
+Iteration #72
+Iteration #73
+Iteration #72
+Iteration #73
+Iteration #73
+Iteration #74
+Iteration #73
+Iteration #74
+Iteration #74
+Iteration #75
+Iteration #74
+Iteration #75
+Iteration #75
+Iteration #76
+Iteration #75
+Iteration #76
+Iteration #77
+Iteration #76
+Iteration #76
+Iteration #77
+Iteration #78
+Iteration #77
+Iteration #77
+Iteration #78
+Iteration #79
+Iteration #78
+Iteration #78
+Iteration #79
+Iteration #80
+Iteration #79
+Iteration #79
+Iteration #80
+Iteration #81
+Iteration #80
+Iteration #80
+Iteration #81
+Iteration #82
+Iteration #81
+Iteration #81
+Iteration #82
+Iteration #83
+Iteration #82
+Iteration #82
+Iteration #83
+Iteration #84
+Iteration #83
+Iteration #83
+Iteration #84
+Iteration #85
+Iteration #84
+Iteration #84
+Iteration #85
+Iteration #86
+Iteration #85
+Iteration #85
+Iteration #86
+Iteration #87
+Iteration #86
+Iteration #86
+Iteration #87
+Iteration #88
+Iteration #87
+Iteration #87
+Iteration #88
+Iteration #89
+Iteration #88
+Iteration #88
+Iteration #89
+Iteration #90
+Iteration #89
+Iteration #89
+Iteration #90
+Iteration #91
+Iteration #90
+Iteration #90
+Iteration #91
+Iteration #92
+Iteration #91
+Iteration #91
+Iteration #92
+Iteration #93
+Iteration #92
+Iteration #92
+Iteration #93
+Iteration #94
+Iteration #93
+Iteration #93
+Iteration #94
+Iteration #95
+Iteration #94
+Iteration #94
+Iteration #95
+Iteration #96
+Iteration #95
+Iteration #95
+Iteration #96
+Iteration #97
+Iteration #96
+Iteration #96
+Iteration #97
+Iteration #98
+Iteration #97
+Iteration #97
+Iteration #98
+Iteration #98
+Iteration #99
+Iteration #98
+Iteration #99
+Iteration #99
+Iteration #100
+Iteration #99
+Iteration #100
+Iteration #100
+
+Found 10000 with a probability of 1.000000
+
+Iteration #100
+
+Found 10000 with a probability of 1.000000
+
+
+Found 10000 with a probability of 1.000000
+
+
+Found 10000 with a probability of 1.000000
+
+/
+# started on Thu Mar 11 01:34:28 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          100019.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              95255      context-switches          #    0.952 K/sec                  
+S0-C0           1               1025      cpu-migrations            #    0.010 K/sec                  
+S0-C0           1              31460      page-faults               #    0.315 K/sec                  
+S0-C0           1          997677787      cycles                    #    0.010 GHz                    
+S0-C0           1         3490915635      instructions              #    3.50  insn per cycle         
+S0-C0           1         1728268813      branches                  #   17.279 M/sec                  
+S0-C0           1           46231052      branch-misses             #    2.67% of all branches        
+S0-C1           1          100019.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              75700      context-switches          #    0.757 K/sec                  
+S0-C1           1                914      cpu-migrations            #    0.009 K/sec                  
+S0-C1           1              32358      page-faults               #    0.324 K/sec                  
+S0-C1           1         1002699255      cycles                    #    0.010 GHz                    
+S0-C1           1         4003356557      instructions              #    3.99  insn per cycle         
+S0-C1           1         1812373625      branches                  #   18.120 M/sec                  
+S0-C1           1           39992619      branch-misses             #    2.21% of all branches        
+S0-C2           1          100019.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              86208      context-switches          #    0.862 K/sec                  
+S0-C2           1                911      cpu-migrations            #    0.009 K/sec                  
+S0-C2           1              32541      page-faults               #    0.325 K/sec                  
+S0-C2           1         1105591691      cycles                    #    0.011 GHz                    
+S0-C2           1         3634625957      instructions              #    3.29  insn per cycle         
+S0-C2           1         1749751971      branches                  #   17.494 M/sec                  
+S0-C2           1           42358993      branch-misses             #    2.42% of all branches        
+S0-C3           1          100019.67 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              78883      context-switches          #    0.789 K/sec                  
+S0-C3           1                886      cpu-migrations            #    0.009 K/sec                  
+S0-C3           1              31943      page-faults               #    0.319 K/sec                  
+S0-C3           1         1016142521      cycles                    #    0.010 GHz                    
+S0-C3           1         3957383404      instructions              #    3.89  insn per cycle         
+S0-C3           1         1806225617      branches                  #   18.059 M/sec                  
+S0-C3           1           41411308      branch-misses             #    2.29% of all branches        
+
+     100.020188046 seconds time elapsed
+
+================================================================================
+perf stat -o libquatum_shor.log --per-core -a taskset -c 0-3 ./shor_benchmark.sh -n 4
+N = 200, 42 qubits required
+N = 200, 42 qubits required
+Random seed: 161
+Random seed: 161
+N = 200, 42 qubits required
+Random seed: 161
+N = 200, 42 qubits required
+Random seed: 161
+Measured 26219 (0.400070), fractional approximation is 1071/2677.
+Odd denominator, trying to expand by 2.
+Possible period is 5354.
+Unable to determine factors, try again.
+Measured 26219 (0.400070), fractional approximation is 1071/2677.
+Odd denominator, trying to expand by 2.
+Possible period is 5354.
+Unable to determine factors, try again.
+Measured 26219 (0.400070), fractional approximation is 1071/2677.
+Odd denominator, trying to expand by 2.
+Possible period is 5354.
+Unable to determine factors, try again.
+Measured 26219 (0.400070), fractional approximation is 1071/2677.
+Odd denominator, trying to expand by 2.
+Possible period is 5354.
+Unable to determine factors, try again.
+/
+# started on Thu Mar 11 01:36:08 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1          287747.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1             251252      context-switches          #    0.873 K/sec                  
+S0-C0           1               1482      cpu-migrations            #    0.005 K/sec                  
+S0-C0           1               6001      page-faults               #    0.021 K/sec                  
+S0-C0           1          193031725      cycles                    #    0.001 GHz                    
+S0-C0           1         3910483008      instructions              #   20.26  insn per cycle         
+S0-C0           1         4218925668      branches                  #   14.662 M/sec                  
+S0-C0           1          137762571      branch-misses             #    3.27% of all branches        
+S0-C1           1          287747.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1             214203      context-switches          #    0.744 K/sec                  
+S0-C1           1               1415      cpu-migrations            #    0.005 K/sec                  
+S0-C1           1               7547      page-faults               #    0.026 K/sec                  
+S0-C1           1          328439702      cycles                    #    0.001 GHz                    
+S0-C1           1          822331784      instructions              #    2.50  insn per cycle         
+S0-C1           1          145362860      branches                  #    0.505 M/sec                  
+S0-C1           1          126353288      branch-misses             #   86.92% of all branches        
+S0-C2           1          287747.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1             216572      context-switches          #    0.753 K/sec                  
+S0-C2           1               1332      cpu-migrations            #    0.005 K/sec                  
+S0-C2           1               5180      page-faults               #    0.018 K/sec                  
+S0-C2           1          192700507      cycles                    #    0.001 GHz                    
+S0-C2           1         1009030099      instructions              #    5.24  insn per cycle         
+S0-C2           1          176009324      branches                  #    0.612 M/sec                  
+S0-C2           1          121872916      branch-misses             #   69.24% of all branches        
+S0-C3           1          287747.68 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1             210706      context-switches          #    0.732 K/sec                  
+S0-C3           1               1392      cpu-migrations            #    0.005 K/sec                  
+S0-C3           1               3066      page-faults               #    0.011 K/sec                  
+S0-C3           1          194368663      cycles                    #    0.001 GHz                    
+S0-C3           1          782047538      instructions              #    4.02  insn per cycle         
+S0-C3           1          120586673      branches                  #    0.419 M/sec                  
+S0-C3           1          126429798      branch-misses             #  104.85% of all branches        
+
+     287.748496730 seconds time elapsed
+
+================================================================================
+perf stat -o arm_core_benchmarks.log --per-core -a taskset -c 0-3 ./arm_core_benchmarks.sh -n 4
+/root/i-benchmarks/libquantum/bin
+# started on Thu Mar 11 01:40:56 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1           29847.23 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1               3055      context-switches          #    0.102 K/sec                  
+S0-C0           1                 49      cpu-migrations            #    0.002 K/sec                  
+S0-C0           1                419      page-faults               #    0.014 K/sec                  
+S0-C0           1          137504199      cycles                    #    0.005 GHz                    
+S0-C0           1          607083066      instructions              #    4.42  insn per cycle         
+S0-C0           1         1211558771      branches                  #   40.592 M/sec                  
+S0-C0           1          262202563      branch-misses             #   21.64% of all branches        
+S0-C1           1           29847.23 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1               1300      context-switches          #    0.044 K/sec                  
+S0-C1           1                 37      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1                192      page-faults               #    0.006 K/sec                  
+S0-C1           1         4245373311      cycles                    #    0.142 GHz                    
+S0-C1           1          581874354      instructions              #    0.14  insn per cycle         
+S0-C1           1         1208019335      branches                  #   40.473 M/sec                  
+S0-C1           1          261247941      branch-misses             #   21.63% of all branches        
+S0-C2           1           29847.23 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1               3905      context-switches          #    0.131 K/sec                  
+S0-C2           1                 26      cpu-migrations            #    0.001 K/sec                  
+S0-C2           1                129      page-faults               #    0.004 K/sec                  
+S0-C2           1          115566710      cycles                    #    0.004 GHz                    
+S0-C2           1          597108643      instructions              #    5.17  insn per cycle         
+S0-C2           1         1210204513      branches                  #   40.547 M/sec                  
+S0-C2           1          261960820      branch-misses             #   21.65% of all branches        
+S0-C3           1           29847.24 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1               2428      context-switches          #    0.081 K/sec                  
+S0-C3           1                 19      cpu-migrations            #    0.001 K/sec                  
+S0-C3           1                217      page-faults               #    0.007 K/sec                  
+S0-C3           1           40926985      cycles                    #    0.001 GHz                    
+S0-C3           1          583185837      instructions              #   14.25  insn per cycle         
+S0-C3           1         1208292532      branches                  #   40.483 M/sec                  
+S0-C3           1          261396204      branch-misses             #   21.63% of all branches        
+
+      29.847601126 seconds time elapsed
+
+================================================================================
+perf stat -o multichase.log --per-core -a taskset -c 0-3 ./multichase -m 512m -n 10 -t 4
+ 165.6
+# started on Thu Mar 11 01:41:26 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1            7740.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1               1280      context-switches          #    0.165 K/sec                  
+S0-C0           1                 29      cpu-migrations            #    0.004 K/sec                  
+S0-C0           1             228849      page-faults               #    0.030 M/sec                  
+S0-C0           1          722802104      cycles                    #    0.093 GHz                    
+S0-C0           1          835942347      instructions              #    1.16  insn per cycle         
+S0-C0           1          111798436      branches                  #   14.443 M/sec                  
+S0-C0           1            9648977      branch-misses             #    8.63% of all branches        
+S0-C1           1            7740.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1                642      context-switches          #    0.083 K/sec                  
+S0-C1           1                 10      cpu-migrations            #    0.001 K/sec                  
+S0-C1           1             237651      page-faults               #    0.031 M/sec                  
+S0-C1           1          912441308      cycles                    #    0.118 GHz                    
+S0-C1           1          908415328      instructions              #    1.00  insn per cycle         
+S0-C1           1          121496137      branches                  #   15.695 M/sec                  
+S0-C1           1           10373009      branch-misses             #    8.54% of all branches        
+S0-C2           1            7740.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1                699      context-switches          #    0.090 K/sec                  
+S0-C2           1                 16      cpu-migrations            #    0.002 K/sec                  
+S0-C2           1             232922      page-faults               #    0.030 M/sec                  
+S0-C2           1         1025897114      cycles                    #    0.133 GHz                    
+S0-C2           1         1027934920      instructions              #    1.00  insn per cycle         
+S0-C2           1          132995403      branches                  #   17.181 M/sec                  
+S0-C2           1           10040193      branch-misses             #    7.55% of all branches        
+S0-C3           1            7740.87 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1               1085      context-switches          #    0.140 K/sec                  
+S0-C3           1                 15      cpu-migrations            #    0.002 K/sec                  
+S0-C3           1             217799      page-faults               #    0.028 M/sec                  
+S0-C3           1          724854727      cycles                    #    0.094 GHz                    
+S0-C3           1          824481844      instructions              #    1.14  insn per cycle         
+S0-C3           1          109379826      branches                  #   14.130 M/sec                  
+S0-C3           1            9617692      branch-misses             #    8.79% of all branches        
+
+       7.741182142 seconds time elapsed
+
+================================================================================
+================================================================================
+Printing results
+File: arm_core_benchmarks.txt
+instructions: 2369251900
+=(607083066+581874354+597108643+583185837)
+frequencies: 0.038
+=(0.005+0.142+0.004+0.001)/4
+ipcs:6.00
+=1*(4.42+0.14+5.17+14.25)/4
+
+File: multichase.txt
+instructions: 3596774439
+=(835942347+908415328+1027934920+824481844)
+frequencies: 0.109
+=(0.093+0.118+0.133+0.094)/4
+ipcs:1.07
+=1*(1.16+1.00+1.00+1.14)/4
+
+File: libquatum_shor.txt
+instructions: 6523892429
+=(3910483008+822331784+1009030099+782047538)
+frequencies: 0.001
+=(0.001+0.001+0.001+0.001)/4
+ipcs:8.00
+=1*(20.26+2.50+5.24+4.02)/4
+
+File: libquantum_groover.txt
+instructions: 15086281553
+=(3490915635+4003356557+3634625957+3957383404)
+frequencies: 0.010
+=(0.010+0.010+0.011+0.010)/4
+ipcs:3.67
+=1*(3.50+3.99+3.29+3.89)/4
+
+================================================================================
+Finished running benchmarks
+================================================================================
