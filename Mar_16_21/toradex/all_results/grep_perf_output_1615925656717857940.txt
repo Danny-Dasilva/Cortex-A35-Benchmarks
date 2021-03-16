@@ -1,0 +1,40 @@
+# started on Tue Mar 16 20:14:16 2021
+
+
+ Performance counter stats for 'system wide':
+
+S0-C0           1           74494.65 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C0           1              23434      context-switches          #    0.315 K/sec                  
+S0-C0           1                692      cpu-migrations            #    0.009 K/sec                  
+S0-C0           1               2472      page-faults               #    0.033 K/sec                  
+S0-C0           1        70126491444      cycles                    #    0.941 GHz                    
+S0-C0           1        46486569484      instructions              #    0.66  insn per cycle         
+S0-C0           1         5996905087      branches                  #   80.501 M/sec                  
+S0-C0           1          459396803      branch-misses             #    7.66% of all branches        
+S0-C1           1           74494.66 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C1           1              40222      context-switches          #    0.540 K/sec                  
+S0-C1           1                593      cpu-migrations            #    0.008 K/sec                  
+S0-C1           1               2434      page-faults               #    0.033 K/sec                  
+S0-C1           1        61976007162      cycles                    #    0.832 GHz                    
+S0-C1           1        40916333210      instructions              #    0.66  insn per cycle         
+S0-C1           1         5301766573      branches                  #   71.170 M/sec                  
+S0-C1           1          408664721      branch-misses             #    7.71% of all branches        
+S0-C2           1           74494.66 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C2           1              23542      context-switches          #    0.316 K/sec                  
+S0-C2           1                451      cpu-migrations            #    0.006 K/sec                  
+S0-C2           1               1909      page-faults               #    0.026 K/sec                  
+S0-C2           1        69238252410      cycles                    #    0.929 GHz                    
+S0-C2           1        46178044899      instructions              #    0.67  insn per cycle         
+S0-C2           1         5974192234      branches                  #   80.196 M/sec                  
+S0-C2           1          453525623      branch-misses             #    7.59% of all branches        
+S0-C3           1           74494.66 msec cpu-clock                 #    1.000 CPUs utilized          
+S0-C3           1              29594      context-switches          #    0.397 K/sec                  
+S0-C3           1                485      cpu-migrations            #    0.007 K/sec                  
+S0-C3           1               2550      page-faults               #    0.034 K/sec                  
+S0-C3           1        65926218668      cycles                    #    0.885 GHz                    
+S0-C3           1        43482221606      instructions              #    0.66  insn per cycle         
+S0-C3           1         5617000750      branches                  #   75.401 M/sec                  
+S0-C3           1          432049528      branch-misses             #    7.69% of all branches        
+
+      74.502038289 seconds time elapsed
+
